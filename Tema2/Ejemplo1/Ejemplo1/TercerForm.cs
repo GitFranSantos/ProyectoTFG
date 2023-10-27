@@ -17,26 +17,29 @@ namespace Ejemplo1
             InitializeComponent();
         }
 
-        private void rdBtn1_MouseClick(object sender, MouseEventArgs e)
+        private void rdBtn1_Click(object sender, EventArgs e)
         {
-            new TercerForm().Show();
-            this.Size = Size;
-        }
-        private void rdBtn2_MouseClick(object sender, MouseEventArgs e)
-        {
-            new TercerForm().Show();
-            this.Size = new Size(640, 480);
+            this.Size = new Size(600, 480);
         }
 
-        private void rdBtn2_MouseClick_1(object sender, MouseEventArgs e)
+        private void rdBtn2_Click(object sender, EventArgs e)
         {
-            new TercerForm().Show();
             this.Size = new Size(800, 600);
         }
-        private void rdBtn3_MouseClick(object sender, MouseEventArgs e)
+
+        private void rdBtn3_Click(object sender, EventArgs e)
         {
-            new TercerForm().Show();
             this.Size = new Size(1024, 768);
+        }
+
+        private void rdBtnNormal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdBtnMaximizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
