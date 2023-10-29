@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            listBox1 = new ListBox();
+            listaForestales = new ListBox();
             btn1 = new Button();
             btn2 = new Button();
             btn3 = new Button();
@@ -45,14 +45,14 @@
             label1.TabIndex = 0;
             label1.Text = "Ingenieros forestales acreditados para trabajar en la empresa";
             // 
-            // listBox1
+            // listaForestales
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(320, 110);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 104);
-            listBox1.TabIndex = 1;
+            listaForestales.FormattingEnabled = true;
+            listaForestales.ItemHeight = 20;
+            listaForestales.Location = new Point(320, 110);
+            listaForestales.Name = "listaForestales";
+            listaForestales.Size = new Size(150, 104);
+            listaForestales.TabIndex = 1;
             // 
             // btn1
             // 
@@ -62,6 +62,7 @@
             btn1.TabIndex = 2;
             btn1.Text = "Agregar";
             btn1.UseVisualStyleBackColor = true;
+            btn1.Click += btn1_Click;
             // 
             // btn2
             // 
@@ -71,6 +72,7 @@
             btn2.TabIndex = 3;
             btn2.Text = "Eliminar";
             btn2.UseVisualStyleBackColor = true;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
@@ -80,6 +82,7 @@
             btn3.TabIndex = 4;
             btn3.Text = "Contar";
             btn3.UseVisualStyleBackColor = true;
+            btn3.Click += btn3_Click;
             // 
             // btn4
             // 
@@ -89,6 +92,7 @@
             btn4.TabIndex = 5;
             btn4.Text = "Ver nombre";
             btn4.UseVisualStyleBackColor = true;
+            btn4.Click += btn4_Click;
             // 
             // Form1
             // 
@@ -99,7 +103,7 @@
             Controls.Add(btn3);
             Controls.Add(btn2);
             Controls.Add(btn1);
-            Controls.Add(listBox1);
+            Controls.Add(listaForestales);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Ejemplo de Listas";
@@ -110,7 +114,7 @@
         #endregion
 
         private Label label1;
-        private ListBox listBox1;
+        private ListBox listaForestales;
         private Button btn1;
         private Button btn2;
         private Button btn3;
