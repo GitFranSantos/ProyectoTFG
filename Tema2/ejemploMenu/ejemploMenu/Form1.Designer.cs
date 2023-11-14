@@ -52,6 +52,8 @@
             MenuContextualTxtB = new ContextMenuStrip(components);
             MenuContextualTxtB_Resetear = new ToolStripMenuItem();
             caulToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            habilitarToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             MenuContextualTxtA.SuspendLayout();
             MenuContextualTxtB.SuspendLayout();
@@ -78,7 +80,7 @@
             // 
             MenuItemArchivo_Configuracion.DropDownItems.AddRange(new ToolStripItem[] { MenuItemConfi_Color, MenuItemConfi_Fuente });
             MenuItemArchivo_Configuracion.Name = "MenuItemArchivo_Configuracion";
-            MenuItemArchivo_Configuracion.Size = new Size(185, 26);
+            MenuItemArchivo_Configuracion.Size = new Size(224, 26);
             MenuItemArchivo_Configuracion.Text = "Configuracion";
             // 
             // MenuItemConfi_Color
@@ -115,14 +117,14 @@
             MenuItemSalir.Name = "MenuItemSalir";
             MenuItemSalir.ShortcutKeys = Keys.Control | Keys.S;
             MenuItemSalir.ShowShortcutKeys = false;
-            MenuItemSalir.Size = new Size(185, 26);
+            MenuItemSalir.Size = new Size(224, 26);
             MenuItemSalir.Text = "Salir";
             MenuItemSalir.ToolTipText = "Ctrl+s";
             MenuItemSalir.Click += MenuItemSalir_Click;
             // 
             // MenuItemOperaciones
             // 
-            MenuItemOperaciones.DropDownItems.AddRange(new ToolStripItem[] { MenuItemSumar, MenuItemRestar, MenuItemMultiplicacion, MenuItemDivision });
+            MenuItemOperaciones.DropDownItems.AddRange(new ToolStripItem[] { MenuItemSumar, MenuItemRestar, MenuItemMultiplicacion, MenuItemDivision, toolStripSeparator1, habilitarToolStripMenuItem });
             MenuItemOperaciones.Name = "MenuItemOperaciones";
             MenuItemOperaciones.Size = new Size(106, 24);
             MenuItemOperaciones.Text = "Operaciones";
@@ -217,20 +219,32 @@
             MenuContextualTxtB.ImageScalingSize = new Size(20, 20);
             MenuContextualTxtB.Items.AddRange(new ToolStripItem[] { MenuContextualTxtB_Resetear, caulToolStripMenuItem });
             MenuContextualTxtB.Name = "MenuContextualTxtB";
-            MenuContextualTxtB.Size = new Size(211, 80);
+            MenuContextualTxtB.Size = new Size(198, 52);
             // 
             // MenuContextualTxtB_Resetear
             // 
             MenuContextualTxtB_Resetear.Name = "MenuContextualTxtB_Resetear";
-            MenuContextualTxtB_Resetear.Size = new Size(210, 24);
+            MenuContextualTxtB_Resetear.Size = new Size(197, 24);
             MenuContextualTxtB_Resetear.Text = "Resetear";
             MenuContextualTxtB_Resetear.Click += MenuContextualTxtB_Resetear_Click;
             // 
             // caulToolStripMenuItem
             // 
             caulToolStripMenuItem.Name = "caulToolStripMenuItem";
-            caulToolStripMenuItem.Size = new Size(210, 24);
+            caulToolStripMenuItem.Size = new Size(197, 24);
             caulToolStripMenuItem.Text = "Calcular Aleatorio";
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(183, 6);
+            // 
+            // habilitarToolStripMenuItem
+            // 
+            habilitarToolStripMenuItem.CheckOnClick = true;
+            habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
+            habilitarToolStripMenuItem.Size = new Size(186, 26);
+            habilitarToolStripMenuItem.Text = "Habilitar";
             // 
             // Form1
             // 
@@ -277,5 +291,7 @@
         private ContextMenuStrip MenuContextualTxtB;
         private ToolStripMenuItem MenuContextualTxtB_Resetear;
         private ToolStripMenuItem caulToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem habilitarToolStripMenuItem;
     }
 }
