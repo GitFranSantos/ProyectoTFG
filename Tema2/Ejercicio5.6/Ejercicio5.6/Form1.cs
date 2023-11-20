@@ -4,7 +4,6 @@ namespace Ejercicio5._6
     {
         ConexionBdd miConexion = new ConexionBdd("root", "2DAM", "localhost", "3306");
         
-
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +13,9 @@ namespace Ejercicio5._6
         {
             miConexion.Conectar();
 
-            miConexion.GetNomColumnas(listBoxNomCol);
+            listBoxNomCol.DataSource = miConexion.GetNombreColumnas();
+
+            //miConexion.GetNomColumnas(listBoxNomCol);
 
             lblNumColB.Text = miConexion.GetNumCol().ToString();
 
@@ -24,7 +25,7 @@ namespace Ejercicio5._6
 
             txtBoxCampo1.Text = miConexion.GetCampo1().ToString();
 
-            txtBoxCampo2.Text = miConexion.GetCampo2().ToString();
+            //txtBoxCampo2.Text = miConexion.GetCampo2().ToString();
         }
     }
 }

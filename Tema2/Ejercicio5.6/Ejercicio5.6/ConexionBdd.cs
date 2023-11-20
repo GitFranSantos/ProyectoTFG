@@ -57,7 +57,17 @@ namespace Ejercicio5._6
                 MessageBox.Show("Error al conectar al servidor MySQL: " + ex.Message, "Error al conectar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public List<string> GetNombreColumnas()
+        {
+            List<string> result = new List<string>();
 
+            foreach(DataColumn col in ds.Tables[0].Columns)
+            {
+                result.Add(col.ColumnName);
+            }
+
+            return result;
+        }
         public void GetNomColumnas(ListBox listaNombre)
         {
             foreach (DataColumn col in ds.Tables[0].Columns)
@@ -75,6 +85,7 @@ namespace Ejercicio5._6
         {
             return ds.Tables[0].Columns.Count;
         }
+
         /*
         public void GetCampo(TextBox txtBoxCampo1, TextBox txtCampo2)
         {
@@ -88,12 +99,13 @@ namespace Ejercicio5._6
         {
             DataRow fila = ds.Tables[0].Rows[0];
             return fila[0].ToString();
+            
         }
-
+        /*
         public string GetCampo2()
         {
             return ds.Tables[0].Rows[0][1].ToString();
         }
-
+        */
     }
 }
