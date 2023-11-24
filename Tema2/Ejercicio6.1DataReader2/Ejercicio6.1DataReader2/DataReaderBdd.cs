@@ -41,6 +41,7 @@ namespace Ejercicio6._1DataReader2
                 MessageBox.Show("Error al conectar al servidor MySQL: " + ex.Message, "Error al conectar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        //esto es una prueba para github
         public void Desconectar()
         {
             dataReader.Close();
