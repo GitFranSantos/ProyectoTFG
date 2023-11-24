@@ -40,6 +40,13 @@ namespace Ejercicio5._7
 
         private void buttonPrincipio_Click(object sender, EventArgs e)
         {
+            if (indiceActual == 0)
+            {
+                buttonAtras.Enabled = false;
+                buttonPrincipio.Enabled = false;
+                buttonAvanzar.Enabled = true;
+                buttonFinal.Enabled = true;
+            }
             textBoxDNI.Text = conexion.GetPrimeraFila()["DNI"].ToString();
             textBoxNombre.Text = conexion.GetPrimeraFila()["nombre"].ToString();
             textBoxApellidos.Text = conexion.GetPrimeraFila()["apellidos"].ToString();
@@ -50,42 +57,48 @@ namespace Ejercicio5._7
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
+            indiceActual--;
+            if (indiceActual == 0)
+            {
+                buttonAtras.Enabled = false;
+                buttonPrincipio.Enabled = false;
+                buttonAvanzar.Enabled = true;
+                buttonFinal.Enabled = true;
+            }
+            
             textBoxDNI.Text = conexion.GetSiguiente(indiceActual)["DNI"].ToString();
             textBoxNombre.Text = conexion.GetSiguiente(indiceActual)["nombre"].ToString();
             textBoxApellidos.Text = conexion.GetSiguiente(indiceActual)["apellidos"].ToString();
             textBoxTelefono.Text = conexion.GetSiguiente(indiceActual)["telefono"].ToString();
             textBoxEmail.Text = conexion.GetSiguiente(indiceActual)["email"].ToString();
-
-            if (indiceActual >= 0)
-            {
-                indiceActual--;
-            }
-            else
-            {
-                buttonAtras.Enabled = false;
-            }
         }
 
         private void buttonAvanzar_Click(object sender, EventArgs e)
         {
+            indiceActual++;
+            if (indiceActual <= conexion.GetLongitudTabla())
+            {
+                buttonAtras.Enabled = true;
+                buttonPrincipio.Enabled = true;
+                buttonAvanzar.Enabled = false;
+                buttonFinal.Enabled = false;
+            }
             textBoxDNI.Text = conexion.GetSiguiente(indiceActual)["DNI"].ToString();
             textBoxNombre.Text = conexion.GetSiguiente(indiceActual)["nombre"].ToString();
             textBoxApellidos.Text = conexion.GetSiguiente(indiceActual)["apellidos"].ToString();
             textBoxTelefono.Text = conexion.GetSiguiente(indiceActual)["telefono"].ToString();
             textBoxEmail.Text = conexion.GetSiguiente(indiceActual)["email"].ToString();
-
-            if(indiceActual <= conexion.GetLongitudTabla())
-            {
-                indiceActual++;
-            }
-            else
-            {
-                buttonAvanzar.Enabled = false;
-            }
         }
 
         private void buttonFinal_Click(object sender, EventArgs e)
         {
+            if (indiceActual <= conexion.GetLongitudTabla())
+            {
+                buttonAtras.Enabled = true;
+                buttonPrincipio.Enabled = true;
+                buttonAvanzar.Enabled = false;
+                buttonFinal.Enabled = false;
+            }
             textBoxDNI.Text = conexion.GetUltimaFila()["DNI"].ToString();
             textBoxNombre.Text = conexion.GetUltimaFila()["nombre"].ToString();
             textBoxApellidos.Text = conexion.GetUltimaFila()["apellidos"].ToString();
