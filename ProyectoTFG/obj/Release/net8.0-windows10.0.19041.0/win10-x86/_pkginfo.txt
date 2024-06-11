@@ -1,1 +1,0 @@
-C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Release\net8.0-windows10.0.19041.0\win10-x64\AppPackages\ProyectoTFG_1.0.1.0_Test\ProyectoTFG_1.0.1.0_x86.msix

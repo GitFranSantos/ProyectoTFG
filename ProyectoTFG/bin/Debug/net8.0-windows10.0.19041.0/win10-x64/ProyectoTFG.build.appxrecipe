@@ -67,77 +67,80 @@
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
-      <PackagePath>logo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infonegro.scale-100.png">
-      <PackagePath>infonegro.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconver.scale-100.png">
+      <PackagePath>iconver.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconocultar.scale-100.png">
       <PackagePath>iconocultar.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editarblanco.scale-100.png">
-      <PackagePath>editarblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnegro.scale-100.png">
-      <PackagePath>addnegro.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirblanco.scale-100.png">
+      <PackagePath>iconosalirblanco.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\incidenciasnegro.scale-100.png">
       <PackagePath>incidenciasnegro.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editarnegro.scale-100.png">
-      <PackagePath>editarnegro.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosblanco.scale-100.png">
-      <PackagePath>dispositivosblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablablanco.scale-100.png">
-      <PackagePath>tablablanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\glpi.scale-100.png">
-      <PackagePath>glpi.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarblanco.scale-100.png">
-      <PackagePath>borrarblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsnegro.scale-100.png">
-      <PackagePath>settingsnegro.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsblanco.scale-100.png">
-      <PackagePath>settingsblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirnegro.scale-100.png">
-      <PackagePath>iconosalirnegro.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnegro.scale-100.png">
+      <PackagePath>addnegro.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconoadminblanco.scale-100.png">
       <PackagePath>iconoadminblanco.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addblanco.scale-100.png">
-      <PackagePath>addblanco.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsblanco.scale-100.png">
+      <PackagePath>settingsblanco.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojocerrado.scale-100.png">
-      <PackagePath>ojocerrado.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojoabierto.scale-100.png">
-      <PackagePath>ojoabierto.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconver.scale-100.png">
-      <PackagePath>iconver.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconmas.scale-100.png">
-      <PackagePath>iconmas.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosnegro.scale-100.png">
-      <PackagePath>dispositivosnegro.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablanegro.scale-100.png">
+      <PackagePath>tablanegro.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\incidenciasblanco.scale-100.png">
       <PackagePath>incidenciasblanco.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosnegro.scale-100.png">
+      <PackagePath>dispositivosnegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirnegro.scale-100.png">
+      <PackagePath>iconosalirnegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infoblanco.scale-100.png">
+      <PackagePath>infoblanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editarblanco.scale-100.png">
+      <PackagePath>editarblanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconoadminnegro.scale-100.png">
       <PackagePath>iconoadminnegro.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\carga.scale-100.gif">
-      <PackagePath>carga.scale-100.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addblanco.scale-100.png">
+      <PackagePath>addblanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojoabierto.scale-100.png">
+      <PackagePath>ojoabierto.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosblanco.scale-100.png">
+      <PackagePath>dispositivosblanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablablanco.scale-100.png">
+      <PackagePath>tablablanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsnegro.scale-100.png">
+      <PackagePath>settingsnegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarblanco.scale-100.png">
+      <PackagePath>borrarblanco.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infonegro.scale-100.png">
+      <PackagePath>infonegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editarnegro.scale-100.png">
+      <PackagePath>editarnegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarnegro.scale-100.png">
+      <PackagePath>borrarnegro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojocerrado.scale-100.png">
+      <PackagePath>ojocerrado.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-400.png">
       <PackagePath>logoAppLargeTile.scale-400.png</PackagePath>
@@ -276,18 +279,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoApp.ico">
       <PackagePath>logoApp.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablanegro.scale-100.png">
-      <PackagePath>tablanegro.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infoblanco.scale-100.png">
-      <PackagePath>infoblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirblanco.scale-100.png">
-      <PackagePath>iconosalirblanco.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarnegro.scale-100.png">
-      <PackagePath>borrarnegro.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>

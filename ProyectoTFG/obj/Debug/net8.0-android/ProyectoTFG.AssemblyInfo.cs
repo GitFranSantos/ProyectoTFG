@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CIFPn1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2b5f298208bdf4cda6c15bcb5a5307afd412ea17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fa94ff3e8a86c4275271265ec3ba4f61af85e3da")]
 [assembly: System.Reflection.AssemblyProductAttribute("Incidenciapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Incidenciapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\vistas\\incidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\vistas\\incidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\bbdd\\mongodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\bbdd\\mongodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -35,27 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Incidencias.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\Incidencias.xaml.cs",
-              "RelativeDocumentMoniker": "ProyectoTFG\\Vistas\\Incidencias.xaml.cs",
-              "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\Incidencias.xaml.cs",
-              "RelativeToolTip": "ProyectoTFG\\Vistas\\Incidencias.xaml.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T18:12:35.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MongoDB.cs",
               "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\BBDD\\MongoDB.cs",
               "RelativeDocumentMoniker": "ProyectoTFG\\BBDD\\MongoDB.cs",
               "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\BBDD\\MongoDB.cs",
               "RelativeToolTip": "ProyectoTFG\\BBDD\\MongoDB.cs",
-              "ViewState": "AQIAAFwBAAAAAAAAAAAQwG4BAAAAAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:41:16.602Z",
+              "WhenOpened": "2024-06-11T23:42:26.248Z",
               "EditorCaption": ""
             }
           ]

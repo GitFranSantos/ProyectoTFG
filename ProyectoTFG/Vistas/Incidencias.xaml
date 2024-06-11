@@ -51,7 +51,7 @@
                           HorizontalOptions="CenterAndExpand"
                           VerticalOptions="Start"
                           >
-                    
+
                     <ListView.ItemTemplate>
 
                         <DataTemplate>
@@ -88,7 +88,7 @@
                                            FontFamily="{DynamicResource fuente}"
                                            Padding="5"
                                            />
-                                    
+
                                 </Grid>
 
                             </ViewCell>
@@ -153,7 +153,7 @@
                             Clicked="btnBuscar_Clicked"/>
 
                 </VerticalStackLayout>
-                
+
             </Frame>
 
             <Label x:Name="lblPrioridad"

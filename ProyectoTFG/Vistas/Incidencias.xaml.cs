@@ -43,6 +43,8 @@ public partial class Incidencias : ContentPage
                 Estado = "Sin resolver"
             };
 
+            await App.bdd.InsertarIncidencia(nuevaIncidencia);
+
             DisplayAlert("", "Incidencia agregada", "Ok");
             LimpiarEntrys();
 
