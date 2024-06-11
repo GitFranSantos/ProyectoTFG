@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Usabilidad.TemaOriginal">
+
+    <Color x:Key="colorTemaOriginal">#009ACD</Color>
+    
+    <Color x:Key="colorFondoFlayout">#B0C4DE</Color>
+    
+    <Color x:Key="colorFuenteEtiqueta">#333333</Color>
+
+    <Color x:Key="colorBotones">#6C7B8B</Color>
+    
+    <Color x:Key="colorFilaSeleccionada">#4169E1</Color>
+
+    <Color x:Key="colorEntrys">#007ACD</Color>
+    
+    <Color x:Key="colorPlaceholder">#808080</Color>
+
+    <x:String x:Key="colorIconoSettings">settingsnegro.png</x:String>
+
+    <x:String x:Key="colorIconoInci">incidenciasnegro.png</x:String>
+
+    <x:String x:Key="colorIconoDisp">dispositivosnegro.png</x:String>
+
+    <x:String x:Key="colorIconoTabla">tablanegro.png</x:String>
+
+    <x:String x:Key="colorIconoSalir">iconosalirnegro.png</x:String>
+
+    <x:String x:Key="colorIconoAdmin">iconoadminnegro.png</x:String>
+
+    <x:String x:Key="colorIconoEdit">editarnegro.png</x:String>
+
+    <x:String x:Key="colorIconoBorrar">borrarnegro.png</x:String>
+
+    <x:String x:Key="colorIconoAdd">addnegro.png</x:String>
+
+    <x:String x:Key="colorIconoInfo">infonegro.png</x:String>
+
+    <x:String x:Key="fuente">fuenteApp.ttf</x:String>
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
+        <Setter Property="FontSize" Value="{DynamicResource tamLetra}"/>
+        <Setter Property="FontFamily" Value="fuenteTickets.ttf"/>
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
+        <Setter Property="PlaceholderColor" Value="{DynamicResource colorPlaceholder}"></Setter>
+        <Setter Property="BackgroundColor" Value="{DynamicResource colorEntrys}"></Setter>
+        <Setter Property="FontSize" Value="{DynamicResource tamLetra}"/>
+        <Setter Property="MaxLength" Value="30"/>
+        <Setter Property="FontFamily" Value="fuenteTickets.ttf"/>
+    </Style>
+
+    <Style TargetType="Picker">
+        <Setter Property="TextColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
+        <Setter Property="BackgroundColor" Value="{DynamicResource colorEntrys}"></Setter>
+        <Setter Property="FontSize" Value="{DynamicResource tamLetra}"/>
+        <Setter Property="FontFamily" Value="fuenteTickets.ttf"/>
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="TextColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
+        <Setter Property="BackgroundColor" Value="{DynamicResource colorBotones}"></Setter>
+        <Setter Property="FontSize" Value="{DynamicResource tamLetra}"/>
+        <Setter Property="FontFamily" Value="fuenteTickets.ttf"/>
+    </Style>
+
+</ResourceDictionary>

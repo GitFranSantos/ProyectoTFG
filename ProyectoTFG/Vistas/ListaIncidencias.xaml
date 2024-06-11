@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.ListaIncidencias"
+             BackgroundColor="{DynamicResource colorTemaOriginal}"
+             Loaded="ContentPage_Loaded" >
+
+    <FlyoutBase.ContextFlyout>
+
+        <MenuFlyout>
+
+            <MenuFlyoutItem Text="Recargar" Clicked="ContentPage_Loaded">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="R"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+        </MenuFlyout>
+
+    </FlyoutBase.ContextFlyout>
+
+    <ScrollView>
+
+        <Grid HorizontalOptions="FillAndExpand"  
+          Margin="50,50,50,50"
+          RowDefinitions="auto, *">
+
+            <!-- Encabezado de la tabla -->
+            <Grid Grid.Row="0" BackgroundColor="{DynamicResource colorFilaSeleccionada}" 
+              Padding="5" Margin="0,0,0,15"
+              ColumnDefinitions="*,*,*,*,*,*,*,*" >
+
+                <Label Text="" Grid.Column="0"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Button Grid.Column="1" Text="Fecha Inicio" 
+                        x:Name="btnFechInicio"
+                        HorizontalOptions="FillAndExpand" 
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Pulsa para ordenar por fecha ascendente o descendente"
+                        Clicked="btnFechInicio_Clicked"/>
+
+                <Button Grid.Column="2" Text="Estado"
+                        x:Name="btnEstado"
+                        HorizontalOptions="CenterAndExpand" 
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Pulsa para ordenar por estado ascendente o descendente"
+                        Clicked="btnEstado_Clicked"/>
+
+                <Button Grid.Column="3" Text="Urgencia" 
+                        x:Name="btnUrgen"
+                        HorizontalOptions="CenterAndExpand" 
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Pulsa para ordenar por urgencia ascendente o descendente"
+                        Clicked="btnUrgen_Clicked"/>
+
+                <Button Grid.Column="4" Text="Dispositivo"
+                        x:Name="btnPrio"
+                        HorizontalOptions="CenterAndExpand" 
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Pulsa para ordenar por prioridad ascendente o descendente"
+                        Clicked="btnPrio_Clicked"/>
+
+                <Button Grid.Column="5" Text="Título" 
+                        FontFamily="{DynamicResource fuente}"
+                        HorizontalOptions="CenterAndExpand" />
+                
+                <Button Grid.Column="6" Text="Id Dispositivo" 
+                        HorizontalOptions="CenterAndExpand" 
+                        FontFamily="{DynamicResource fuente}"/>
+
+                <Button Grid.Column="7" Text="Detalles" 
+                        HorizontalOptions="CenterAndExpand" 
+                        FontFamily="{DynamicResource fuente}"/>
+                
+            </Grid>
+
+            <CollectionView Grid.Row="1" x:Name="collectionView"  >
+                
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <Grid Padding="5" ColumnDefinitions="*,*,*,*,*,*,*,*" 
+                              x:Name="gridTabla" ColumnSpacing="10">
+
+                            <RadioButton HorizontalOptions="End"
+                                         BackgroundColor="Transparent"
+                                         VerticalOptions="Center"
+                                         CheckedChanged="RadioButton_CheckedChanged"
+                                         ToolTipProperties.Text="Pulsa para seleccionar una incidencia"
+                                         Grid.Column="0"/>
+
+                            <Label Grid.Column="1" Text="{Binding FechaInicio}" 
+                                   FontFamily="{DynamicResource fuente}"
+                                   HorizontalOptions="CenterAndExpand" />
+
+                            <Picker Grid.Column="2"
+                                    x:Name="estadoPicker"
+                                    IsEnabled="False"
+                                    HorizontalOptions="Center"
+                                    ToolTipProperties.Text="Sin resolver: Incidencia sin asignar
+                                                            En curso: La incidencia es asignada al técnico que cambia a este estado una incidencia
+                                                            Resuelta: La incidencia solo puede ser borrada por un admin"
+                                    FontFamily="{DynamicResource fuente}"
+                                    SelectedIndexChanged="Picker_SelectedIndexChanged"
+                                    SelectedItem="{Binding Estado}">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Sin resolver</x:String>
+                                        <x:String>En curso</x:String>
+                                        <x:String>Resuelta</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+
+                            </Picker>
+
+                            <Label Grid.Column="3" Text="{Binding Urgencia}" 
+                                   FontFamily="{DynamicResource fuente}"
+                                   HorizontalOptions="CenterAndExpand" />
+
+                            <Label Grid.Column="4" Text="{Binding TipoDispositivo}" 
+                                   FontFamily="{DynamicResource fuente}"
+                                   HorizontalOptions="CenterAndExpand" />
+
+                            <Label Grid.Column="5" Text="{Binding Titulo}" 
+                                   FontFamily="{DynamicResource fuente}"
+                                   HorizontalOptions="CenterAndExpand" />
+
+                            <Label Grid.Column="6" Text="{Binding IdDispositivo}" 
+                                   FontFamily="{DynamicResource fuente}"
+                                   HorizontalOptions="CenterAndExpand" />
+
+                            <HorizontalStackLayout Grid.Column="7" HorizontalOptions="Center">
+                                
+                                <ImageButton Source="{DynamicResource colorIconoInfo}"
+                                             ToolTipProperties.Text="Pulsa para ver los detalles de la incidencia"
+                                             BackgroundColor="Transparent"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             WidthRequest="40"
+                                             HeightRequest="40"
+                                             IsEnabled="False"
+                                             Aspect="AspectFill" 
+                                             x:Name="btnInfo"
+                                             Margin="0,0,15,0"
+                                             Clicked="btnInfo_Clicked"/>
+
+                                <ImageButton Source="{DynamicResource colorIconoBorrar}"
+                                             ToolTipProperties.Text="Pulsa para borrar la incidencia una vez resuelta"
+                                             BackgroundColor="Transparent"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center"
+                                             IsEnabled="False"
+                                             IsVisible="False"
+                                             WidthRequest="40"
+                                             HeightRequest="40"
+                                             Aspect="AspectFill" 
+                                             x:Name="btnBorrar"
+                                             Margin="0,0,10,0"
+                                             Clicked="btnBorrar_Clicked"/>
+                                
+                            </HorizontalStackLayout>
+
+                        </Grid>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

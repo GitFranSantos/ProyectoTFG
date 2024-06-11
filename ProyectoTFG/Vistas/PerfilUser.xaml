@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.PerfilUser"
+             BackgroundColor="Transparent">
+
+    <FlyoutBase.ContextFlyout>
+
+        <MenuFlyout>
+
+            <MenuFlyoutItem Text="Volver" Clicked="btnVolver_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="None" Key="Escape"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+        </MenuFlyout>
+
+    </FlyoutBase.ContextFlyout>
+
+    <ScrollView>
+
+        <Frame BackgroundColor="{DynamicResource colorTemaOriginal}"
+               CornerRadius="25"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center">
+
+            <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  RowSpacing="15" ColumnSpacing="15">
+
+                <Frame HeightRequest="200"
+                       WidthRequest="200"
+                       CornerRadius="50"
+                       Padding="0"
+                       HorizontalOptions="Center"
+                       Grid.Row="0" Grid.ColumnSpan="3">
+
+                    <Image x:Name="imagenPerfil"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           HorizontalOptions="Center"
+                           Source="carga.gif"
+                           Aspect="Fill"/>
+
+                </Frame>
+
+                <Button x:Name="btnBuscar"
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Pulsa para seleccionar una imagen de tu dispositivo"
+                        Text="Cambiar Imagen"
+                        Grid.Row="1" Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        Clicked="btnBuscar_Clicked"/>
+
+                <!-- Fila para los Labels y los Entrys -->
+                <Label Text="Email" 
+                       FontFamily="{DynamicResource fuente}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End"
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Entry x:Name="emailEntry"
+                       WidthRequest="150"
+                       Text="{Binding Email}"
+                       FontFamily="{DynamicResource fuente}"
+                       IsEnabled="False"
+                       HorizontalOptions="Start" 
+                       Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Nueva Contraseña" 
+                       FontFamily="{DynamicResource fuente}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" 
+                       Grid.Row="3" Grid.Column="0"/>
+
+                <Entry HorizontalOptions="Start" 
+                       WidthRequest="150"
+                       x:Name="passEntry"
+                       FontFamily="{DynamicResource fuente}"
+                       ToolTipProperties.Text="Introduce una nueva contraseña para cambiar tu contraseña anterior"
+                       Grid.Row="3" Grid.Column="1"/>
+
+                <Button x:Name="btnVolver"
+                        FontFamily="{DynamicResource fuente}"
+                        Text="Volver"
+                        Grid.Row="4" Grid.Column="0"
+                        HorizontalOptions="End"
+                        Clicked="btnVolver_Clicked"/>
+
+                <Button x:Name="btnGuardar"
+                        FontFamily="{DynamicResource fuente}"
+                        Text="Guardar Contraseña"
+                        Grid.Row="4" Grid.Column="1"
+                        HorizontalOptions="Center"
+                        Clicked="btnGuardar_Clicked"/>
+
+            </Grid>
+
+        </Frame>
+
+    </ScrollView>
+
+</ContentPage>

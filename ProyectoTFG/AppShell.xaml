@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProyectoTFG.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vistas="clr-namespace:ProyectoTFG.Vistas"
+    x:Name="shell"
+    BackgroundColor="{DynamicResource colorTemaOriginal}"
+    FlyoutBehavior="Disabled"
+    FlyoutBackgroundColor="{DynamicResource colorFondoFlayout}"
+    >
+
+    <ShellContent x:Name="loginPage"
+                  Shell.NavBarIsVisible="False"/>
+
+    <ShellContent x:Name="adminContent" 
+                  FlyoutIcon="{DynamicResource colorIconoAdmin}"
+                  Shell.NavBarIsVisible="False"/>
+
+    <ShellContent x:Name="contentIncidencias"
+                  FlyoutIcon="{DynamicResource colorIconoInci}"
+                  Shell.NavBarIsVisible="False"
+                  Title="Incidencias"
+                  ContentTemplate="{DataTemplate vistas:Incidencias}"/>
+
+    <ShellContent x:Name="contentDispositivos"
+                  FlyoutIcon="{DynamicResource colorIconoDisp}"
+                  Shell.NavBarIsVisible="False"
+                  Title="Dispositivos"
+                  ContentTemplate="{DataTemplate vistas:Dispositivos}"/>
+
+    <ShellContent x:Name="contentTabla"
+                  FlyoutIcon="{DynamicResource colorIconoTabla}"
+                  Shell.NavBarIsVisible="False"/>
+
+    <ShellContent x:Name="contentConfi"
+                  FlyoutIcon="{DynamicResource colorIconoSettings}"
+                  Shell.NavBarIsVisible="False"/>
+
+    <MenuItem x:Name="miMenuItem"
+              Text="Salir"
+              IconImageSource="{DynamicResource colorIconoSalir}"/>
+
+    <Shell.FlyoutFooter>
+
+        <VerticalStackLayout Padding="10">
+
+            <Frame HorizontalOptions="FillAndExpand" 
+                   BackgroundColor="{DynamicResource colorTemaOriginal}" 
+                   CornerRadius="5"
+                   Padding="5">
+
+                <StackLayout Orientation="Horizontal" Spacing="25"
+                            HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="Center">
+
+                    <Label x:Name="lblFrame" VerticalOptions="CenterAndExpand" FontFamily="fuenteTickets"/>
+
+                    <Frame HorizontalOptions="Center" 
+                           BackgroundColor="{DynamicResource colorTemaOriginal}" 
+                           CornerRadius="25" 
+                           HeightRequest="45" WidthRequest="45">
+
+                        <Image x:Name="imgFrame" Source="{Binding ImagenUrl}"
+                               HeightRequest="45" WidthRequest="45"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" Aspect="Fill"/>
+                    </Frame>
+
+                </StackLayout>
+
+                <Frame.GestureRecognizers>
+
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+
+                </Frame.GestureRecognizers>
+
+            </Frame>
+
+            <Label x:Name="ClockLabel" HorizontalOptions="Center" Margin="0,0,0,50" />
+
+        </VerticalStackLayout>
+
+    </Shell.FlyoutFooter>
+
+</Shell>

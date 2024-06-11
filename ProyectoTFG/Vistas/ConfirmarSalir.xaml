@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.ConfirmarSalir"
+             Title="ConfirmarSalir"
+             BackgroundColor="Transparent">
+
+    <FlyoutBase.ContextFlyout>
+
+        <MenuFlyout>
+
+            <MenuFlyoutItem Text="Aceptar" Clicked="btnAceptar_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="Enter"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+            <MenuFlyoutItem Text="Cancelar" Clicked="btnVolver_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="None" Key="Escape"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+        </MenuFlyout>
+
+    </FlyoutBase.ContextFlyout>
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *, *" HorizontalOptions="Center" VerticalOptions="Center">
+
+            <Button x:Name="btnVolver0"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver1"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver2"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver3"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver4"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver5"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver6"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Button x:Name="btnVolver7"
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Opacity="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Clicked="btnVolver_Clicked"/>
+
+            <Frame Grid.Column="1"
+                   Grid.Row="1"
+                   BackgroundColor="{DynamicResource colorTemaOriginal}">
+
+                <Grid RowDefinitions="auto, auto, auto" VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="15">
+
+                    <Label x:Name="lblSalir"
+                           FontFamily="{DynamicResource fuente}"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Text="¿Seguro que quieres salir?"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"/>
+
+                    <Button x:Name="btnAceptar"
+                            FontFamily="{DynamicResource fuente}"
+                            Text="Aceptar"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Clicked="btnAceptar_Clicked"/>
+
+                    <Button x:Name="btnCancelar"
+                            FontFamily="{DynamicResource fuente}"
+                            Text="Cancelar"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            Clicked="btnVolver_Clicked"/>
+
+                </Grid>
+
+            </Frame>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

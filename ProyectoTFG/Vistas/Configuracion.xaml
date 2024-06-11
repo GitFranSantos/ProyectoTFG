@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Configuracion"
+             Title="Configuracion"
+             BackgroundColor="{DynamicResource colorTemaOriginal}">
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*, *, *, *, *, *" 
+          ColumnDefinitions="*, *" 
+          HorizontalOptions="Center" 
+          VerticalOptions="Center" 
+          RowSpacing="20" ColumnSpacing="10">
+
+            <!-- Título para los RadioButtons -->
+            <Label Text="Selecciona un tema"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center" />
+
+            <!-- StackLayout para organizar los RadioButtons horizontalmente -->
+            <StackLayout Orientation="Horizontal"
+                         ToolTipProperties.Text="Selecciona un tema para toda la aplicación"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         HorizontalOptions="Center">
+
+                <RadioButton x:Name="temaOriginalRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Original"
+                             GroupName="Temas"
+                             Value="Tema Original"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontFamily="{DynamicResource fuente}"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}"
+                             Margin="0,0,20,0" />
+
+                <RadioButton x:Name="temaClaroRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Claro"
+                             GroupName="Temas"
+                             Value="Tema Claro"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontFamily="{DynamicResource fuente}"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}"
+                             Margin="0,0,20,0" />
+
+                <RadioButton x:Name="temaAltoContrasteRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Alto Contraste"
+                             GroupName="Temas"
+                             Value="Tema Alto Contraste"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontFamily="{DynamicResource fuente}"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}" />
+                
+            </StackLayout>
+
+            <!-- Etiqueta para el tamaño de la fuente -->
+            <Label x:Name="lblFontSize"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Tamaño de la fuente"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center" />
+
+            <!-- Slider para ajustar el tamaño de la fuente -->
+            <Slider x:Name="sliderFontSize"
+                    BackgroundColor="{DynamicResource colorBotones}"
+                    ToolTipProperties.Text="Mueve el slider para elegir el tamaño de la fuente"
+                    Maximum="18"
+                    Minimum="10"
+                    Value="14"
+                    WidthRequest="300"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ValueChanged="sliderFontSize_ValueChanged"
+                />
+
+            <!-- Botón para guardar la configuración -->
+            <Button x:Name="btnGuardarConfi"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="Guardar"
+                    HorizontalOptions="Center" 
+                    Clicked="btnGuardarConfi_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

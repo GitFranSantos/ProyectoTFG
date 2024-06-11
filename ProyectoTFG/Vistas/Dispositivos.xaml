@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Dispositivos"
+             Title="Dispositivos"
+             BackgroundColor="{DynamicResource colorTemaOriginal}">
+
+    <FlyoutBase.ContextFlyout>
+
+        <MenuFlyout>
+
+            <MenuFlyoutItem Text="Borrar" Clicked="MenuFlyoutItem_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="Delete"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+        </MenuFlyout>
+
+    </FlyoutBase.ContextFlyout>
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,auto,auto,*" 
+              HorizontalOptions="Center" VerticalOptions="Center" Margin="25,25,25,25"
+              RowSpacing="25" ColumnSpacing="10">
+
+            <Label x:Name="lblTipo"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="End"
+                   Text="Tipo"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="tipoPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    ToolTipProperties.Text="Elige el tipo de dispositivo de la lista"
+                    Grid.Row="0"
+                    MaximumWidthRequest="400"
+                    SelectedIndexChanged="tipoPicker_SelectedIndexChanged"
+                    Grid.Column="1"/>
+
+            <Entry x:Name="tipoEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   ToolTipProperties.Text="Introduce de forma manual el nuevo tipo de dispositivo"
+                   MaximumWidthRequest="400"
+                   IsVisible="False"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarTipo"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         Source="{DynamicResource colorIconoAdd}"
+                         ToolTipProperties.Text="Pulsa para agregar el dispositivo a la lista"
+                         IsVisible="False"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="1"
+                         Grid.Column="2"
+                         Clicked="guardarTipo_Clicked"/>
+
+            <Label x:Name="lblFabricante"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Fabricante"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="fabPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    ToolTipProperties.Text="Elige un fabricante de la lista"
+                    MaximumWidthRequest="400"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    SelectedIndexChanged="fabPicker_SelectedIndexChanged"/>
+
+            <Entry x:Name="fabricanteEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   ToolTipProperties.Text="Introduce de forma manual el nuevo fabricante"
+                   MaximumWidthRequest="400"
+                   IsVisible="False"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarFab"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         Source="{DynamicResource colorIconoAdd}"
+                         ToolTipProperties.Text="Pulsa para añadir el nuevo fabricante a la lista"
+                         IsVisible="False"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="3"
+                         Grid.Column="2"
+                         Clicked="guardarFab_Clicked"/>
+
+            <Label x:Name="lblModelo"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Modelo"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="modeloEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   ToolTipProperties.Text="Introduce el modelo del dispositivo"
+                   MaximumWidthRequest="400"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblUbicacion"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Ubicacíón"
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="ubicacionPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    ToolTipProperties.Text="Elige el aula en la que se encuentra el dispositivo"
+                    MaximumWidthRequest="400"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    SelectedIndexChanged="ubicacionPicker_SelectedIndexChanged"/>
+
+            <Entry x:Name="ubicacionEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   ToolTipProperties.Text="Introduce una nueva aula"
+                   MaximumWidthRequest="400"
+                   IsVisible="False"
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarUbicacion"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         Source="{DynamicResource colorIconoAdd}"
+                         ToolTipProperties.Text="Pulsa para añadir la nueva aula a la lista"
+                         IsVisible="False"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="6"
+                         Grid.Column="2"
+                         Clicked="guardarUbicacion_Clicked"/>
+
+            <Label x:Name="lblEstado"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Estado"
+                   Grid.Row="7"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="estadoPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    ToolTipProperties.Text="Elige un estado de la lista"
+                    MaximumWidthRequest="400"
+                    Grid.Row="7"
+                    Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Nuevo</x:String>
+                        <x:String>Seminuevo</x:String>
+                        <x:String>Reacondicionado</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <Label x:Name="lblComentarios"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Comentarios"
+                   Grid.Row="8"
+                   Grid.Column="0"/>
+
+            <Editor x:Name="comentariosEditor"
+                    MaxLength="200"
+                    FontSize="{DynamicResource tamLetra}"
+                    TextColor="{DynamicResource colorFuenteEtiqueta}"
+                    PlaceholderColor="{DynamicResource colorPlaceholder}"
+                    BackgroundColor="{DynamicResource colorEntrys}"
+                    FontFamily="{DynamicResource fuente}"
+                    ToolTipProperties.Text="Introduce un información sobre el dispositivo"
+                    MaximumWidthRequest="400"
+                    Placeholder="Escribe aquí..."
+                    HeightRequest="150"
+                    Grid.Row="8"
+                    Grid.Column="1"/>
+
+            <Button x:Name="btnAgregarDispositivo"
+                    FontFamily="{DynamicResource fuente}"
+                    Text="Añadir Dispositivo"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="9" Grid.Column="1"
+                    Clicked="btnAgregarDispositivo_Clicked"/>
+
+            <Frame Grid.Row="8" Grid.Column="3"
+                   HorizontalOptions="Center"
+                   MaximumWidthRequest="520"
+                   MinimumWidthRequest="520"
+                   MaximumHeightRequest="150"
+                   MinimumHeightRequest="150"
+                   VerticalOptions="Start"
+                   BackgroundColor="{DynamicResource colorEntrys}"
+                   ToolTipProperties.Text="Elige el dispositivo de la lista del que quieras crear una incidencia"
+                   x:Name="frameLista">
+
+                <ListView x:Name="listViewDispositivos"
+                          MaximumWidthRequest="500"
+                          SeparatorColor="Black"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="Start"
+                          >
+
+                    <ListView.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <ViewCell>
+
+                                <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="10">
+
+                                    <Label Text="{Binding Tipo}"
+                                           Grid.Column="0"
+                                           HorizontalOptions="Start"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"
+                                           Padding="10,0,0,0"
+                                           />
+
+                                    <Label Text="{Binding Fabricante}"
+                                           Grid.Column="1"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"
+                                           />
+
+                                    <Label Text="{Binding Modelo}"
+                                           Grid.Column="2"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"
+                                           />
+
+                                    <Label Text= "{Binding Ubicacion}"
+                                           Grid.Column="3"
+                                           HorizontalOptions="End"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"
+                                           Padding="0,0,10,0"
+                                           />
+
+                                </Grid>
+
+                            </ViewCell>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </Frame>
+
+            <Entry x:Name="entryFiltro"
+                   Grid.Row="7" Grid.Column="3"
+                   Placeholder="Filtar tipo..."
+                   FontFamily="{DynamicResource fuente}"
+                   TextChanged="entryFiltro_TextChanged"/>
+
+            <Button x:Name="btnBorrar"
+                    Grid.Row="9" Grid.Column="3"
+                    HorizontalOptions="FillAndExpand"
+                    MaximumWidthRequest="520"
+                    FontFamily="{DynamicResource fuente}"
+                    Text="Borrar"
+                    IsEnabled="False"
+                    Clicked="btnBorrar_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

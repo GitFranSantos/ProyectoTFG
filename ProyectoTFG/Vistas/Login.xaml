@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Login"
+             Title="Login"
+             BackgroundColor="#009ACD">
+
+    <FlyoutBase.ContextFlyout>
+
+        <MenuFlyout>
+
+            <MenuFlyoutItem Text="Borrar" Clicked="MenuFlyoutItem_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="Delete"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+            <MenuFlyoutItem Text="Aceptar" Clicked="btnAceptar_Clicked">
+
+                <MenuFlyoutItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="Enter"/>
+
+                </MenuFlyoutItem.KeyboardAccelerators>
+
+            </MenuFlyoutItem>
+
+        </MenuFlyout>
+
+    </FlyoutBase.ContextFlyout>
+
+    <ScrollView>
+
+        <Grid RowDefinitions="auto, auto, auto, auto, auto, auto, auto, auto" ColumnDefinitions="*, *" HorizontalOptions="Center"
+              RowSpacing="15" ColumnSpacing="10" Margin="25,25,25,25">
+
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   CornerRadius="18"
+                   HorizontalOptions="Center"
+                   WidthRequest="500"
+                   HeightRequest="300"
+                   BackgroundColor="Transparent"
+                   Margin="0,0,0,25"
+                   Padding="0">
+
+                <Image Source="logo.png"
+                       Aspect="Fill"/>
+
+            </Frame>
+
+            <Label Text="Email"
+                   FontFamily="{DynamicResource fuente}"
+                   TextColor="#333333"
+                   FontSize="20"
+                   x:Name="lblEmail"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Entry Grid.Row="2"
+                   FontFamily="{DynamicResource fuente}"
+                   TextColor="#333333"
+                   PlaceholderColor="#808080"
+                   BackgroundColor="#4682B4"
+                   Grid.Column="0"
+                   x:Name="emailEntry"
+                   Placeholder="Email"/>
+
+            <Label Text="Contraseña"
+                   FontFamily="{DynamicResource fuente}"
+                   TextColor="#333333"
+                   x:Name="lblPass"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+
+            <Entry Grid.Row="4"
+                   FontFamily="{DynamicResource fuente}"
+                   TextColor="#333333"
+                   PlaceholderColor="#808080"
+                   BackgroundColor="#4682B4"
+                   Grid.Column="0"
+                   x:Name="passEntry"
+                   Placeholder="Contraseña"
+                   IsPassword="True"/>
+
+            <ImageButton Grid.Row="4"
+                         Grid.Column="1"
+                         x:Name="btnOcultar"
+                         Source="ojoabierto.png"
+                         Aspect="AspectFill"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         HorizontalOptions="Start"
+                         CornerRadius="12"
+                         Clicked="btnOcultar_Clicked"/>
+
+            <Button Grid.Row="6"
+                    FontFamily="{DynamicResource fuente}"
+                    BackgroundColor="#6C7B8B"
+                    TextColor="#333333"
+                    Grid.Column="0"
+                    Text="Aceptar"
+                    x:Name="btnAceptar"
+                    Clicked="btnAceptar_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>
