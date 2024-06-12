@@ -214,7 +214,7 @@
 
             <Button x:Name="btnAgregarIncidencia"
                     FontFamily="{DynamicResource fuente}"
-                    Text="Añadir Incidencia"
+                    Text="Crear Incidencia"
                     Grid.Row="7"
                     Grid.ColumnSpan="2"
                     Clicked="btnAgregarIncidencia_Clicked"/>

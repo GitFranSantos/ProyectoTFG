@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-12T09:34:34.412</Modified>
+      <Modified>2024-06-12T10:51:59.878</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.dll">
       <PackagePath>Incidenciapp.dll</PackagePath>
-      <Modified>2024-06-12T09:34:33.536</Modified>
+      <Modified>2024-06-12T10:51:58.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Incidenciapp.exe</PackagePath>
-      <Modified>2024-06-12T09:34:33.594</Modified>
+      <Modified>2024-06-12T10:51:58.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
