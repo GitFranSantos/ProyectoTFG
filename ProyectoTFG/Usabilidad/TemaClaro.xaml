@@ -37,6 +37,8 @@
 
     <x:String x:Key="colorIconoInfo">infonegro.png</x:String>
 
+    <x:String x:Key="colorIconoFlyout">flyoutblanco.png</x:String>
+
     <x:String x:Key="fuente">fuenteApp.ttf</x:String>
 
     <Style TargetType="Label">

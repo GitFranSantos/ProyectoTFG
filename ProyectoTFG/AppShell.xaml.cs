@@ -28,10 +28,23 @@ namespace ProyectoTFG
             contentTabla.Content = listaIncidencias;
             contentTabla.Title = "Tabla incidencias";
 
-            // Crea un temporizador que se ejecuta cada segundo
-            var timer = new System.Timers.Timer(1000);
-            timer.Elapsed += Timer_Elapsed;
-            timer.Start();
+            // Crea un hilo dedicado para ejecutar el temporizador
+            Thread reloj = new Thread(() =>
+            {
+                // Crea un temporizador que se ejecuta cada segundo
+                var timer = new System.Timers.Timer(1000);
+                timer.Elapsed += Timer_Elapsed;
+                timer.Start();
+
+                // Mantener el hilo vivo
+                while (true)
+                {
+                    Thread.Sleep(1000);
+                }
+            });
+
+            reloj.IsBackground = true;
+            reloj.Start();
         }
        
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
@@ -39,7 +52,8 @@ namespace ProyectoTFG
             // Actualiza la hora en la interfaz de usuario en el subproceso principal
             Device.BeginInvokeOnMainThread(() =>
             {
-                ClockLabel.Text = DateTime.Now.ToString("HH:mm:ss");
+                hora.Text = DateTime.Now.ToString("HH:mm:ss");
+                fecha.Text = DateTime.Now.ToString("dddd d MMMM/yyyy");
             });
 
         }
@@ -47,8 +61,12 @@ namespace ProyectoTFG
         public async void CargarLblUser()
         {
             lblFrame.Text = Modelos.UserLogueado.UserLog;
-            imgFrame.Source = await App.bdd.ObtenerImagen(Modelos.UserLogueado.UserLog);
 
+            byte[] imagen = await App.bdd.ObtenerImagenPerfil(Modelos.UserLogueado.UserLog);
+
+            ImageSource img = ImageSource.FromStream(() => new MemoryStream(imagen));
+
+            imgFrame.Source = img;
         }
 
         public async void AplicacionSiConectado()

@@ -28,8 +28,8 @@ namespace ProyectoTFG.Modelos
         [BsonElement("tamFuente")]
         public double TamFuente { get; set; } // Nueva propiedad para el tamaño de fuente
 
-        [BsonElement("imagenUrl")]
-        public string ImagenUrl { get; set; } // Nueva propiedad para la URL de la imagen
+        [BsonElement("imagenPerfil")]
+        public byte[] ImagenPerfil { get; set; } // Nueva propiedad para la URL de la imagen
 
         [BsonElement("contador")]
         public int ContadorNuevasInci { get; set; }

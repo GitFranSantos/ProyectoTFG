@@ -7,6 +7,7 @@ using MongoDB.Bson;
 using System.Text.RegularExpressions;
 using ProyectoTFG.Vistas;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Maui.ApplicationModel.Communication;
 
 namespace ProyectoTFG.BBDD
 {
@@ -364,7 +365,7 @@ namespace ProyectoTFG.BBDD
         }
 
         //Obtener imagen del usuario
-        public async Task<string> ObtenerImagen(string email)
+        public async Task<byte[]> ObtenerImagenPerfil(string email)
         {
             var coleccion = ObtenerColeccionUsuarios();
             var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
@@ -372,8 +373,8 @@ namespace ProyectoTFG.BBDD
             // Buscar el documento del usuario que coincide con el filtro
             var usuario = await coleccion.Find(filtro).FirstOrDefaultAsync();
 
-            // Verificar si se encontró el usuario y retornar la URL de la imagen
-            return usuario.ImagenUrl;
+            // Verificar si se encontró el usuario y retornar la imagen guardada
+            return usuario?.ImagenPerfil;
         }
         //actualizar incidencia
         public async Task ActualizarIncidencia(string id, string nuevoEstado)
@@ -546,13 +547,13 @@ namespace ProyectoTFG.BBDD
             var resultado = await coleccion.DeleteOneAsync(filtro);
             return resultado.DeletedCount > 0;
         }
-        //guardar imagen 
-        public async Task<bool> GuardarImagen(string email, string url)
+        //guardar imagen perfil
+        public async Task<bool> GuardarImagen(string email, byte[] imagenBytes)
         {
             var coleccion = ObtenerColeccionUsuarios();
             var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
 
-            var actualizacion = Builders<Usuario>.Update.Set(u => u.ImagenUrl, url);
+            var actualizacion = Builders<Usuario>.Update.Set(u => u.ImagenPerfil, imagenBytes);
             var resultado = await coleccion.UpdateOneAsync(filtro, actualizacion);
 
             return resultado.ModifiedCount > 0;

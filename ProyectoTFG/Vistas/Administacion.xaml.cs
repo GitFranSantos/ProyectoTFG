@@ -3,6 +3,9 @@ using ProyectoTFG.BBDD;
 using System.Runtime.CompilerServices;
 using MongoDB.Driver;
 using System.Collections.ObjectModel;
+using System.Reflection;
+using MongoDB.Libmongocrypt;
+using System.Diagnostics;
 
 namespace ProyectoTFG.Vistas;
 
@@ -25,6 +28,7 @@ public partial class Administacion : ContentPage
         {
             bool emailValido = await App.bdd.EmailValido(emailEntry.Text);
             bool existeEmail = await App.bdd.ExisteEmail(emailEntry.Text);
+            var imagenPorDefecto = CargarImagenPorDefecto();
 
             if (emailValido && !existeEmail && rolPicker.SelectedItem != null && passwordEntry.Text != null)
             {
@@ -38,7 +42,7 @@ public partial class Administacion : ContentPage
                     ContadorNuevasInci = 0,
                     FilasAntes = 0,
                     FilasActuales = 0,
-                    ImagenUrl = "dotnet_bot.png"
+                    ImagenPerfil = imagenPorDefecto
                 };
 
                 await App.bdd.InsertarUsuario(nuevoUsuario);
@@ -48,6 +52,7 @@ public partial class Administacion : ContentPage
             else
             {
                 DisplayAlert("", "Rellena todos los campos", "ok");
+                
             }
         }
         catch
@@ -60,6 +65,31 @@ public partial class Administacion : ContentPage
 
         LimpiarEntrys();
 
+    }
+
+    // Método para cargar la imagen desde los recursos y convertirla a byte[]
+    private byte[] CargarImagenPorDefecto()
+    {
+        var assembly = typeof(App).GetTypeInfo().Assembly;
+        var resourceName = "ProyectoTFG.Resources.Images.dotnet_bot.png";
+
+        using (var stream = assembly.GetManifestResourceStream(resourceName))
+        {
+            if (stream != null)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    stream.CopyTo(memoryStream);
+                    return memoryStream.ToArray();
+                }
+            }
+            else
+            {
+                // Manejar el caso donde el recurso no se encontró
+                DisplayAlert("",$"No se encontró el recurso: {resourceName}", "ok");
+                return null;
+            }
+        }
     }
 
     private async void btnBorrar_Clicked(object sender, EventArgs e)
