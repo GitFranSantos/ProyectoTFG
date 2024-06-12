@@ -26,6 +26,7 @@
 
         <Frame BackgroundColor="{DynamicResource colorTemaOriginal}"
                CornerRadius="25"
+               BorderColor="{DynamicResource colorFuenteEtiqueta}"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="Center">
 

@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Reflection;
 using MongoDB.Libmongocrypt;
 using System.Diagnostics;
+using Microsoft.Maui.ApplicationModel.Communication;
 
 namespace ProyectoTFG.Vistas;
 

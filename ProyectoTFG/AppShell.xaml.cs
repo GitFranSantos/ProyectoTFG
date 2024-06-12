@@ -60,7 +60,10 @@ namespace ProyectoTFG
 
         public async void CargarLblUser()
         {
-            lblFrame.Text = Modelos.UserLogueado.UserLog;
+            string email = Modelos.UserLogueado.UserLog;
+            int atIndex = email.IndexOf('@');
+
+            lblFrame.Text = "@" + email.Substring(0, atIndex);
 
             byte[] imagen = await App.bdd.ObtenerImagenPerfil(Modelos.UserLogueado.UserLog);
 
@@ -73,7 +76,12 @@ namespace ProyectoTFG
         {
             string rol = await App.bdd.ObtenerRolUsuario(Modelos.UserLogueado.UserLog);
 
-            DisplayAlert("", rol, "ok");
+            string email = Modelos.UserLogueado.UserLog;
+            int atIndex = email.IndexOf('@');
+            string nombre = "@" + email.Substring(0, atIndex);
+
+
+            DisplayAlert("", "Bienvenido " + nombre + "\n" + rol, "ok");
 
             shell.FlyoutBehavior = FlyoutBehavior.Flyout;
 

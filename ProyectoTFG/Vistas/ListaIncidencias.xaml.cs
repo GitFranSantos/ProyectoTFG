@@ -79,7 +79,7 @@ public partial class ListaIncidencias : ContentPage
         // Aquí cargamos las incidencias desde la base de datos
         incidencias = await ObtenerIncidenciasDesdeBDD();
 
-        incidencias = await App.bdd.OrdenarEstadoAsc(incidencias);
+        incidencias = await App.bdd.OrdenarFechaDesc(incidencias);
 
         FilasAntes = incidencias.Count;
 
@@ -253,7 +253,7 @@ public partial class ListaIncidencias : ContentPage
                     await App.bdd.ActualizarIncidencia(idIncidencia, selectedItem);
 
                     // Verifica y actualiza el ItemsSource según el estado seleccionado
-                    if (EstadoActual == "Sin resolver" && (selectedItem == "Sin resolver" || selectedItem == "En curso"))
+                    if (selectedItem == "Sin resolver")
                     {
                         picker.SelectedIndexChanged -= Picker_SelectedIndexChanged;
                         picker.ItemsSource = new List<string> { "Sin resolver", "En curso" };
@@ -275,7 +275,7 @@ public partial class ListaIncidencias : ContentPage
                         picker.SelectedItem = selectedItem;
                         picker.SelectedIndexChanged += Picker_SelectedIndexChanged;
                         // Conéctate a la base de datos y actualiza la incidencia
-                        await App.bdd.ActualizarIncidenciaFin(idIncidencia, DateTime.UtcNow);
+                        await App.bdd.ActualizarIncidenciaFin(idIncidencia, DateTime.UtcNow.AddHours(2));
 
                         // Mostrar todos los botones en la fila seleccionada
                         foreach (var child in grid.Children)

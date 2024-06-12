@@ -46,6 +46,7 @@
         <VerticalStackLayout Padding="10">
 
             <Frame HorizontalOptions="FillAndExpand" 
+                   BorderColor="{DynamicResource colorFuenteEtiqueta}"
                    BackgroundColor="{DynamicResource colorTemaOriginal}" 
                    CornerRadius="5"
                    Padding="5">

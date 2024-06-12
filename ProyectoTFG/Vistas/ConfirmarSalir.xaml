@@ -103,7 +103,8 @@
 
             <Frame Grid.Column="1"
                    Grid.Row="1"
-                   BackgroundColor="{DynamicResource colorTemaOriginal}">
+                   BackgroundColor="{DynamicResource colorTemaOriginal}"
+                   BorderColor="{DynamicResource colorFuenteEtiqueta}">
 
                 <Grid RowDefinitions="auto, auto, auto" VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="15">
 

@@ -26,6 +26,20 @@ public partial class DetallesIncidencia : ContentPage
 
         disp = await App.bdd.ObtenerDispositivo(inci.IdDispositivo);
 
+        string email, nombre;
+        int atIndex;
+
+        if(inci.EmailTecnico == "")
+        {
+            nombre = "";
+        }
+        else
+        {
+            email = inci.EmailTecnico;
+            atIndex = email.IndexOf('@');
+            nombre = "@" + email.Substring(0, atIndex);
+        }
+
         // Convertir los bytes de la imagen a ImageSource
         ImageSource img = ImageSource.FromStream(() => new MemoryStream(inci.ImagenBinaria));
 
@@ -36,7 +50,7 @@ public partial class DetallesIncidencia : ContentPage
         prioridadEntry.Text = inci.Prioridad;
         tituloEntry.Text = inci.Titulo;
         descripcionEntry.Text = inci.Descripcion;
-        tecnicoEntry.Text = inci.EmailTecnico;
+        tecnicoEntry.Text = nombre;
         estadoEntry.Text = inci.Estado;
         idDispEntry.Text = inci.IdDispositivo;
         tipoDispEntry.Text = disp.Tipo;

@@ -93,8 +93,8 @@
                          x:Name="btnOcultar"
                          Source="ojoabierto.png"
                          Aspect="AspectFill"
-                         WidthRequest="20"
-                         HeightRequest="20"
+                         WidthRequest="35"
+                         HeightRequest="35"
                          HorizontalOptions="Start"
                          CornerRadius="12"
                          Clicked="btnOcultar_Clicked"/>

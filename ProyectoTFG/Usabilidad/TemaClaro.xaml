@@ -64,6 +64,8 @@
     </Style>
 
     <Style TargetType="Button">
+        <Setter Property="BorderColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
+        <Setter Property="BorderWidth" Value="2"></Setter>
         <Setter Property="TextColor" Value="{DynamicResource colorFuenteEtiqueta}"></Setter>
         <Setter Property="BackgroundColor" Value="{DynamicResource colorBotones}"></Setter>
         <Setter Property="FontSize" Value="{DynamicResource tamLetra}"/>
