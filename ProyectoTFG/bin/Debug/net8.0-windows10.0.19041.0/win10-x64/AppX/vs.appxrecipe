@@ -18,36 +18,36 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C1E9FB4651330164DA77EFBD046E39D222D7ADD2013126BD4F7997862C0F0C3F</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>com.companyname.proyectotfg_1.0.1.0_x64__k63xp3nh4fw52</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>348EC2727AFA21480C25A1004454D920838FC54ACAAC6950C31B22864470CF21</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.companyname.proyectotfg_1.1.2.0_x64__k63xp3nh4fw52</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.proyectotfg_k63xp3nh4fw52!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.proyectotfg</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=franp</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.1.0</RegisteredVersion>
+    <RegisteredVersion>1.1.2.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-13T15:35:10.422</Modified>
+      <Modified>2024-06-13T19:14:36.786</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-12T09:21:53.032</Modified>
+      <Modified>2024-06-13T19:00:15.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.runtimeconfig.json">
       <PackagePath>Incidenciapp.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-12T09:21:52.947</Modified>
+      <Modified>2024-06-13T19:00:15.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.dll">
       <PackagePath>Incidenciapp.dll</PackagePath>
-      <Modified>2024-06-13T15:35:09.743</Modified>
+      <Modified>2024-06-13T19:14:35.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Incidenciapp.exe</PackagePath>
-      <Modified>2024-06-13T15:35:09.758</Modified>
+      <Modified>2024-06-13T19:14:35.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -379,7 +379,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.deps.json">
       <PackagePath>Incidenciapp.deps.json</PackagePath>
-      <Modified>2024-06-12T09:21:52.880</Modified>
+      <Modified>2024-06-13T19:00:15.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

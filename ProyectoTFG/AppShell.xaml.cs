@@ -81,7 +81,7 @@ namespace ProyectoTFG
             string nombre = "@" + email.Substring(0, atIndex);
 
 
-            DisplayAlert("", "Bienvenido " + nombre + "\n" + rol, "ok");
+            //DisplayAlert("", "Bienvenido " + nombre + "\n" + rol, "ok");
 
             shell.FlyoutBehavior = FlyoutBehavior.Flyout;
 

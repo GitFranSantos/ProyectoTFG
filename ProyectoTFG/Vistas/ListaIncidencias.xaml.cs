@@ -96,7 +96,6 @@ public partial class ListaIncidencias : ContentPage
         await App.bdd.ActualizarFilasAntes(UserLogueado.UserLog, FilasActuales);
 
         mensajeMostrado = false;
-
     }
 
     private async Task<List<Incidencia>> ObtenerIncidenciasDesdeBDD()
