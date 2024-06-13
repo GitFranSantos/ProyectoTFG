@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\vistas\\listaincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\vistas\\listaincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\vistas\\listaincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\vistas\\listaincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|c:\\users\\franp\\desktop\\2dam\\desarrollo de interfaces\\githubdi\\di\\tfg\\proyectotfg\\proyectotfg\\vistas\\detallesincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4C9200C-379E-4E8D-8604-C1D4F1228071}|ProyectoTFG\\ProyectoTFG.csproj|solutionrelative:proyectotfg\\vistas\\detallesincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 62,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListaIncidencias.xaml",
-              "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\ListaIncidencias.xaml",
-              "RelativeDocumentMoniker": "ProyectoTFG\\Vistas\\ListaIncidencias.xaml",
-              "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\ListaIncidencias.xaml",
-              "RelativeToolTip": "ProyectoTFG\\Vistas\\ListaIncidencias.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T19:50:27.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ListaIncidencias.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\ListaIncidencias.xaml.cs",
-              "RelativeDocumentMoniker": "ProyectoTFG\\Vistas\\ListaIncidencias.xaml.cs",
-              "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\ListaIncidencias.xaml.cs*",
-              "RelativeToolTip": "ProyectoTFG\\Vistas\\ListaIncidencias.xaml.cs*",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T19:50:24.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\AppShell.xaml",
-              "RelativeDocumentMoniker": "ProyectoTFG\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\AppShell.xaml",
-              "RelativeToolTip": "ProyectoTFG\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAqAAAA",
+              "Title": "DetallesIncidencia.xaml",
+              "DocumentMoniker": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\DetallesIncidencia.xaml",
+              "RelativeDocumentMoniker": "ProyectoTFG\\Vistas\\DetallesIncidencia.xaml",
+              "ToolTip": "C:\\Users\\franp\\Desktop\\2DAM\\Desarrollo de interfaces\\GitHubDI\\DI\\TFG\\ProyectoTFG\\ProyectoTFG\\Vistas\\DetallesIncidencia.xaml",
+              "RelativeToolTip": "ProyectoTFG\\Vistas\\DetallesIncidencia.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T18:40:59.061Z",
+              "WhenOpened": "2024-06-13T09:22:54.516Z",
               "EditorCaption": ""
             }
           ]

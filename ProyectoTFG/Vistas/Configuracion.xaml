@@ -30,6 +30,7 @@
                          HorizontalOptions="Center">
 
                 <RadioButton x:Name="temaOriginalRadioButton"
+                             SemanticProperties.Description="Tema Original"
                              BackgroundColor="Transparent"
                              Content="Tema Original"
                              GroupName="Temas"
@@ -41,6 +42,7 @@
                              Margin="0,0,20,0" />
 
                 <RadioButton x:Name="temaClaroRadioButton"
+                             SemanticProperties.Description="Tema Claro"
                              BackgroundColor="Transparent"
                              Content="Tema Claro"
                              GroupName="Temas"
@@ -52,6 +54,7 @@
                              Margin="0,0,20,0" />
 
                 <RadioButton x:Name="temaAltoContrasteRadioButton"
+                             SemanticProperties.Description="Tema Oscuro"
                              BackgroundColor="Transparent"
                              Content="Tema Alto Contraste"
                              GroupName="Temas"

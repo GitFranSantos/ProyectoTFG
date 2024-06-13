@@ -92,13 +92,25 @@
                         <Grid Padding="5" ColumnDefinitions="*,*,*,*,*,*,*,*" 
                               x:Name="gridTabla" ColumnSpacing="10">
 
-                            <RadioButton HorizontalOptions="End"
+                            <RadioButton HorizontalOptions="Center"
                                          BackgroundColor="Transparent"
                                          VerticalOptions="Center"
                                          CheckedChanged="RadioButton_CheckedChanged"
                                          ToolTipProperties.Text="Pulsa para seleccionar una incidencia"
                                          Grid.Column="0"/>
 
+                            <!--
+                            <ImageButton HorizontalOptions="Center"
+                                         x:Name="nuevaInci"
+                                         VerticalOptions="Center"
+                                         BackgroundColor="Transparent"
+                                         IsVisible="False"
+                                         Grid.Column="0"
+                                         WidthRequest="40"
+                                         HeightRequest="40"
+                                         Source="{DynamicResource colorIconoInci}"/>
+                            -->
+                            
                             <Label Grid.Column="1" Text="{Binding FechaInicio}" 
                                    FontFamily="{DynamicResource fuente}"
                                    HorizontalOptions="CenterAndExpand" />

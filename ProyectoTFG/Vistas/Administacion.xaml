@@ -56,6 +56,7 @@
 
                     <Entry x:Name="emailEntry"
                            FontFamily="{DynamicResource fuente}"
+                           SemanticProperties.Description="Insertar email"
                            Margin="0,0,0,5"
                            MaximumWidthRequest="300"/>
 
@@ -65,6 +66,7 @@
                            Text="Contraseña"/>
 
                     <Entry x:Name="passwordEntry"
+                           SemanticProperties.Description="Insertar contraseña"
                            Margin="0,0,0,5"
                            FontFamily="{DynamicResource fuente}"
                            MaximumWidthRequest="300"/>
@@ -75,6 +77,7 @@
                            Text="Rol"/>
 
                     <Picker x:Name="rolPicker"
+                            SemanticProperties.Description="Seleccionar rol"
                             Margin="0,0,0,5"
                             FontFamily="{DynamicResource fuente}"
                             ToolTipProperties.Text="Selecciona un rol del desplegable"
@@ -112,9 +115,10 @@
                    BackgroundColor="Transparent"
                    CornerRadius="25">
 
-                <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="0,0,0,10">
+                <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
                     <Entry x:Name="entryBuscar"
+                           SemanticProperties.Description="escribe para filtrar por email"
                            Margin="0,0,0,5"
                            Placeholder="Filtrar email..."
                            Grid.Row="1" Grid.Column="1"
@@ -180,7 +184,6 @@
                     </Frame>
 
                     <Button x:Name="btnBorrar"
-                            Margin="0,0,0,5"
                             FontFamily="{DynamicResource fuente}"
                             MaximumWidthRequest="300"
                             Text="Borrar"
@@ -233,6 +236,7 @@
                            Text="Nueva Contraseña"/>
 
                     <Entry x:Name="entryNuevaPass"
+                           SemanticProperties.Description="Introuce una nueva contraseña"
                            Margin="0,0,0,5"
                            FontFamily="{DynamicResource fuente}"
                            ToolTipProperties.Text="Introduce una nueva contraseña para cambiar la anterior"

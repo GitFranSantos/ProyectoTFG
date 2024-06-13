@@ -117,6 +117,7 @@
                            VerticalOptions="Start"/>
 
                     <Button x:Name="btnAceptar"
+                            SemanticProperties.Description="Aceptar"
                             FontFamily="{DynamicResource fuente}"
                             Text="Aceptar"
                             Grid.Column="0"
@@ -126,6 +127,7 @@
                             Clicked="btnAceptar_Clicked"/>
 
                     <Button x:Name="btnCancelar"
+                            SemanticProperties.Description="Cancelar"
                             FontFamily="{DynamicResource fuente}"
                             Text="Cancelar"
                             Grid.Column="0"
