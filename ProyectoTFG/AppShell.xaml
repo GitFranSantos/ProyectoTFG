@@ -60,7 +60,8 @@
                     <Frame HorizontalOptions="Center" 
                            BackgroundColor="{DynamicResource colorTemaOriginal}" 
                            CornerRadius="25" 
-                           HeightRequest="45" WidthRequest="45">
+                           HeightRequest="45"
+                           WidthRequest="45">
 
                         <Image x:Name="imgFrame" Source="{Binding ImagenUrl}"
                                HeightRequest="45" WidthRequest="45"

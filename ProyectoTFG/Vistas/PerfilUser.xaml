@@ -46,7 +46,6 @@
                            HeightRequest="200"
                            WidthRequest="200"
                            HorizontalOptions="Center"
-                           Source="carga.gif"
                            Aspect="Fill"/>
 
                 </Frame>

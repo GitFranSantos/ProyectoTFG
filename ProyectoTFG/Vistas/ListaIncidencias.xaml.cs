@@ -1,7 +1,6 @@
 using Microsoft.Maui.Controls;
 using ProyectoTFG.Modelos;
 using System.Collections.ObjectModel;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProyectoTFG.Vistas;
 
@@ -14,6 +13,7 @@ public partial class ListaIncidencias : ContentPage
     private Grid filaSeleccionada;
     private Incidencia inci;
     private IncidenciasResueltas inciResuelta;
+    Thread hilo;
     public string EstadoActual {  get; set; }
     private bool pulsadoFecha = true;
     private bool pulsadoPrio = true;
@@ -30,7 +30,9 @@ public partial class ListaIncidencias : ContentPage
 	{
 		InitializeComponent();
 
-        Thread hilo = new Thread(async () =>
+        CargarIncidenciasDesdeBDD();
+
+        hilo = new Thread(async () =>
         {
             while (true)
             {
@@ -38,9 +40,11 @@ public partial class ListaIncidencias : ContentPage
                 {
                     incidencias = await App.bdd.ObtenerListaIncidencias();
 
+                    incidencias = await App.bdd.OrdenarFechaDesc(incidencias);
+
                     FilasActuales = incidencias.Count;
 
-                    App.bdd.ActualizarFilasActuales(UserLogueado.UserLog, FilasActuales);
+                    await App.bdd.ActualizarFilasActuales(UserLogueado.UserLog, FilasActuales);
 
                     int? filasAnt = await App.bdd.ObtenerFilasAntes(UserLogueado.UserLog);
 
@@ -48,24 +52,24 @@ public partial class ListaIncidencias : ContentPage
 
                     int? total = filasAct - filasAnt;
 
+                    if (total > 0 && !mensajeMostrado)
+                    {
+                        mensajeMostrado = true;
+                        Device.BeginInvokeOnMainThread(async () =>
+                        {
+                            DisplayAlert("", $"Tienes {total} incidencias nuevas", "ok");
+                        });
+                    }
+
                     Dispatcher.Dispatch(() =>
                     {
                         collectionView.ItemsSource = incidencias;
-                        if (total > 0 && !mensajeMostrado)
-                        {
-                            mensajeMostrado = true;
-                            Device.BeginInvokeOnMainThread(async () =>
-                            {
-                                await DisplayAlert("", $"Tienes {total} incidencias nuevas", "ok");
-                            });
-                        }
                     });
                     
                 }
-                await Task.Delay(1000);
+                await Task.Delay(500);
             }
         });
-
         hilo.Start();
     }
     
@@ -89,7 +93,7 @@ public partial class ListaIncidencias : ContentPage
     {
         base.OnDisappearing();
 
-        App.bdd.ActualizarFilasAntes(UserLogueado.UserLog, FilasActuales);
+        await App.bdd.ActualizarFilasAntes(UserLogueado.UserLog, FilasActuales);
 
         mensajeMostrado = false;
 

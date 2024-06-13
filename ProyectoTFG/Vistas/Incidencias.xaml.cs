@@ -31,7 +31,7 @@ public partial class Incidencias : ContentPage
         {
             nuevaIncidencia = new Incidencia
             {
-                FechaInicio = DateTime.UtcNow,
+                FechaInicio = DateTime.UtcNow.AddHours(2),
                 Urgencia = urgenciaPicker.SelectedItem.ToString(),
                 Prioridad = prioridadPicker.SelectedItem.ToString(),
                 Titulo = tituloEntry.Text,
