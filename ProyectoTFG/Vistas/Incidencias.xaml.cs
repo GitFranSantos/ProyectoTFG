@@ -7,7 +7,6 @@ public partial class Incidencias : ContentPage
     private List<Dispositivo> dispositivos = new List<Dispositivo>();
     private Dispositivo dispositivo = new Dispositivo();
     private Incidencia nuevaIncidencia;
-    private NuevaIncidencia nueva;
     private List<Dispositivo> dispositivosFiltrados = new List<Dispositivo>();
     private byte[] imagenBytesTemp;
 

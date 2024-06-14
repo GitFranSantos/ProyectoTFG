@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Dispositivos"
+             Title="Dispositivos"
+             BackgroundColor="{DynamicResource colorTemaOriginal}">
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*" 
+              HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="25,25,25,25"
+              RowSpacing="25" ColumnSpacing="10">
+
+            <Label x:Name="lblTipo"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="End"
+                   Text="Tipo"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="tipoPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    SelectedIndexChanged="tipoPicker_SelectedIndexChanged"/>
+
+            <Entry x:Name="tipoEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   IsVisible="False"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarTipo"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         IsVisible="False"
+                         Source="{DynamicResource colorIconoAdd}"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="1"
+                         Grid.Column="2"
+                         Clicked="guardarTipo_Clicked"/>
+
+            <Label x:Name="lblFabricante"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Fabricante"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="fabPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    SelectedIndexChanged="fabPicker_SelectedIndexChanged"/>
+
+            <Entry x:Name="fabricanteEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   IsVisible="False"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarFab"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         IsVisible="False"
+                         Source="{DynamicResource colorIconoAdd}"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="3"
+                         Grid.Column="2"
+                         Clicked="guardarFab_Clicked"/>
+
+            <Label x:Name="lblModelo"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Modelo"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="modeloEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblUbicacion"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Ubicacíón"
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="ubicacionPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    SelectedIndexChanged="ubicacionPicker_SelectedIndexChanged"/>
+
+            <Entry x:Name="ubicacionEntry"
+                   FontFamily="{DynamicResource fuente}"
+                   IsVisible="False"
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+
+            <ImageButton x:Name="guardarUbicacion"
+                         Aspect="AspectFill"
+                         HorizontalOptions="Start"
+                         IsVisible="False"
+                         Source="{DynamicResource colorIconoAdd}"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         CornerRadius="8"
+                         Grid.Row="6"
+                         Grid.Column="2"
+                         Clicked="guardarUbicacion_Clicked"/>
+
+            <Label x:Name="lblEstado"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Estado"
+                   Grid.Row="7"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="estadoPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="7"
+                    Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Nuevo</x:String>
+                        <x:String>Seminuevo</x:String>
+                        <x:String>Reacondicionado</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <Label x:Name="lblComentarios"
+                   HorizontalOptions="End"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Comentarios"
+                   Grid.Row="8"
+                   Grid.Column="0"/>
+
+            <Editor x:Name="comentariosEditor"
+                    FontSize="{DynamicResource tamLetra}"
+                    TextColor="{DynamicResource colorFuenteEtiqueta}"
+                    PlaceholderColor="{DynamicResource colorPlaceholder}"
+                    BackgroundColor="{DynamicResource colorEntrys}"
+                    FontFamily="{DynamicResource fuente}"
+                    Placeholder="Escribe aquí..."
+                    HeightRequest="100"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"/>
+
+            <Button x:Name="btnAgregarDispositivo"
+                    FontFamily="{DynamicResource fuente}"
+                    Text="Añadir Dispositivo"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="9"
+                    Grid.ColumnSpan="3"
+                    Clicked="btnAgregarDispositivo_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

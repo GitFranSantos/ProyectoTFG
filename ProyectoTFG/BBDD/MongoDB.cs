@@ -63,22 +63,11 @@ namespace ProyectoTFG.BBDD
         {
             return _database.GetCollection<TipoDispositivo>("Tipos");
         }
-        // obtener la colección de nuevas incidencias
-        private IMongoCollection<NuevaIncidencia> ObtenerColeccionNuevaIncidencia()
-        {
-            return _database.GetCollection<NuevaIncidencia>("NuevasIncidencias");
-        }
+
         // obtener la colección de incidencias resueltas
         private IMongoCollection<IncidenciasResueltas> ObtenerColeccionInciResueltas()
         {
             return _database.GetCollection<IncidenciasResueltas>("IncidenciasResueltas");
-        }
-        //insertar nueva incidencia
-        public async Task InsertarNuevaIncidencia(NuevaIncidencia nueva)
-        {
-            var coleccionNuevasIncidencias = ObtenerColeccionNuevaIncidencia();
-
-            await coleccionNuevasIncidencias.InsertOneAsync(nueva);
         }
         //insertar incidencia resueltas
         public async Task InsertarIncidenciaResuelta(IncidenciasResueltas nueva)
@@ -132,46 +121,10 @@ namespace ProyectoTFG.BBDD
 
             await coleccionTipos.InsertOneAsync(tipo);
         }
-        // Método para actualizar una nueva incidencia
-        public async Task ActualizarNuevaIncidencia(string id, int nuevoContador)
-        {
-            var coleccionNuevasIncidencias = ObtenerColeccionNuevaIncidencia();
+        
 
-            // Crea el filtro para encontrar la incidencia por su ID
-            var filtro = Builders<NuevaIncidencia>.Filter.Eq(incidencia => incidencia.Id, id);
-
-            // Crea la actualización
-            var actualizacion = Builders<NuevaIncidencia>.Update.Set(incidencia => incidencia.ContadorNuevas, nuevoContador);
-
-            // Realiza la actualización
-            var resultado = await coleccionNuevasIncidencias.UpdateOneAsync(filtro, actualizacion);
-
-        }
-
-        // Método para actualizar una nueva incidencia
-        public async Task ActualizarNuevaIncidenciaUser(string email, int nuevoContador)
-        {
-            var coleccion = ObtenerColeccionUsuarios();
-
-            // Crea el filtro para encontrar la incidencia por su ID
-            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
-
-            // Crea la actualización
-            var actualizacion = Builders<Usuario>.Update.Set(u => u.ContadorNuevasInci, nuevoContador);
-
-            // Realiza la actualización
-            var resultado = await coleccion.UpdateOneAsync(filtro, actualizacion);
-
-        }
-        // obtener nueva incidencia
-        public async Task<int> ObtenerNuevaIncidencia(string id)
-        {
-            var coleccionNuevasIncidencias = ObtenerColeccionNuevaIncidencia();
-            var filtro = Builders<NuevaIncidencia>.Filter.Eq(incidencia => incidencia.Id, id);
-            var resultado = await coleccionNuevasIncidencias.Find(filtro).FirstOrDefaultAsync();
-
-            return resultado.ContadorNuevas;
-        }
+        
+        
         //obtener lista de tipos string
         public async Task<List<string>> ObtenerListaTiposString()
         {
@@ -266,21 +219,6 @@ namespace ProyectoTFG.BBDD
             return null; // O lanza una excepción si prefieres manejarlo así
         }
         
-        public async Task<int> ObtenerContadorUsuario(string email)
-        {
-            var coleccion = ObtenerColeccionUsuarios();
-            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
-            var resultado = await coleccion.Find(filtro).FirstOrDefaultAsync();
-            if(resultado.ContadorNuevasInci != 0)
-            {
-                return resultado.ContadorNuevasInci;
-            }
-            else
-            {
-                return 0;
-            }
-            
-        }
 
         //obtener una incidencia por su id
         public async Task<Incidencia> ObtenerIncidencia(string id)
@@ -657,6 +595,45 @@ namespace ProyectoTFG.BBDD
             var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
             var update = Builders<Usuario>.Update.Set(u => u.FilasAntes, filasAlEntrar);
             await coleccionUsuarios.UpdateOneAsync(filtro, update);
+        }
+
+        public async Task ActualizarTodosFilasAntes(int filasAlEntrar)
+        {
+            var coleccionUsuarios = ObtenerColeccionUsuarios();
+            var update = Builders<Usuario>.Update.Set(u => u.FilasAntes, filasAlEntrar);
+            await coleccionUsuarios.UpdateManyAsync(Builders<Usuario>.Filter.Empty, update);
+        }
+
+        public async Task ActualizarIdsIncidenciasActuales(string email, List<string> idsActuales)
+        {
+            var coleccionUsuarios = ObtenerColeccionUsuarios();
+            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
+            var update = Builders<Usuario>.Update.Set(u => u.IdsActuales, idsActuales);
+            await coleccionUsuarios.UpdateOneAsync(filtro, update);
+        }
+
+        public async Task ActualizarIdsIncidenciasAntes(string email, List<string> idsAntes)
+        {
+            var coleccionUsuarios = ObtenerColeccionUsuarios();
+            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
+            var update = Builders<Usuario>.Update.Set(u => u.IdsAntes, idsAntes);
+            await coleccionUsuarios.UpdateOneAsync(filtro, update);
+        }
+
+        public async Task<List<string>> ObtenerIdsIncidenciasActuales(string email)
+        {
+            var coleccionUsuarios = ObtenerColeccionUsuarios();
+            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
+            var usuario = await coleccionUsuarios.Find(filtro).FirstOrDefaultAsync();
+            return usuario?.IdsActuales ?? new List<string>();
+        }
+
+        public async Task<List<string>> ObtenerIdsIncidenciasAntes(string email)
+        {
+            var coleccionUsuarios = ObtenerColeccionUsuarios();
+            var filtro = Builders<Usuario>.Filter.Eq(u => u.Email, email);
+            var usuario = await coleccionUsuarios.Find(filtro).FirstOrDefaultAsync();
+            return usuario?.IdsAntes ?? new List<string>();
         }
 
     }

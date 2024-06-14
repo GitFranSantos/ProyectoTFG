@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.PerfilUser"
+             BackgroundColor="Transparent">
+
+    <ScrollView>
+
+        <Frame BackgroundColor="{DynamicResource colorTemaOriginal}"
+               CornerRadius="25"
+               BorderColor="{DynamicResource colorFuenteEtiqueta}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+
+            <Grid RowDefinitions="auto,auto,auto,auto,auto" ColumnDefinitions="auto,auto,auto"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  RowSpacing="15" ColumnSpacing="15">
+
+                <Frame HeightRequest="200"
+                       WidthRequest="200"
+                       CornerRadius="50"
+                       Padding="0"
+                       HorizontalOptions="Center"
+                       Grid.Row="0" Grid.ColumnSpan="3">
+
+                    <Image x:Name="imagenPerfil"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           HorizontalOptions="Center"
+                           Aspect="Fill"/>
+
+                </Frame>
+
+                <Button x:Name="btnBuscar"
+                        FontFamily="{DynamicResource fuente}"
+                        Text="Cambiar Imagen"
+                        Grid.Row="1" Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        Clicked="btnBuscar_Clicked"/>
+
+                <Label Text="Email" 
+                       FontFamily="{DynamicResource fuente}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End"
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Entry x:Name="emailEntry"
+                       Text="{Binding Email}"
+                       FontFamily="{DynamicResource fuente}"
+                       BackgroundColor="{DynamicResource colorEntrys}"
+                       IsEnabled="False"
+                       MinimumWidthRequest="100"
+                       HorizontalOptions="Start" 
+                       Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Nueva Contraseña" 
+                       FontFamily="{DynamicResource fuente}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" 
+                       Grid.Row="3" Grid.Column="0"/>
+
+                <Entry HorizontalOptions="Start" 
+                       x:Name="passEntry"
+                       MinimumWidthRequest="100"
+                       FontFamily="{DynamicResource fuente}"
+                       BackgroundColor="{DynamicResource colorEntrys}"
+                       Grid.Row="3" Grid.Column="1"/>
+
+                <Button x:Name="btnVolver"
+                        FontFamily="{DynamicResource fuente}"
+                        Text="Volver"
+                        Grid.Row="4" Grid.Column="0"
+                        HorizontalOptions="End"
+                        Clicked="btnVolver_Clicked"/>
+
+                <Button x:Name="btnGuardar"
+                        FontFamily="{DynamicResource fuente}"
+                        Text="Guardar Contraseña"
+                        Grid.Row="4" Grid.Column="1"
+                        HorizontalOptions="Center"
+                        Clicked="btnGuardar_Clicked"/>
+
+            </Grid>
+
+        </Frame>
+
+    </ScrollView>
+
+</ContentPage>

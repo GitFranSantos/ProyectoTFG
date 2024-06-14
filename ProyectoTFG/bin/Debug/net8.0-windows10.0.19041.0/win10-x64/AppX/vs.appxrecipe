@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-13T19:14:36.786</Modified>
+      <Modified>2024-06-14T17:01:50.999</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-13T19:00:15.720</Modified>
+      <Modified>2024-06-14T17:01:50.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.runtimeconfig.json">
       <PackagePath>Incidenciapp.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-13T19:00:15.414</Modified>
+      <Modified>2024-06-14T17:01:50.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.dll">
       <PackagePath>Incidenciapp.dll</PackagePath>
-      <Modified>2024-06-13T19:14:35.874</Modified>
+      <Modified>2024-06-14T17:01:49.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Incidenciapp.exe</PackagePath>
-      <Modified>2024-06-13T19:14:35.887</Modified>
+      <Modified>2024-06-14T17:01:49.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.062</Modified>
+      <Modified>2024-06-14T17:01:26.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.078</Modified>
+      <Modified>2024-06-14T17:01:26.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.098</Modified>
+      <Modified>2024-06-14T17:01:26.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.126</Modified>
+      <Modified>2024-06-14T17:01:26.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.233</Modified>
+      <Modified>2024-06-14T17:01:26.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\fuenteApp.ttf">
       <PackagePath>fuenteApp.ttf</PackagePath>
@@ -91,295 +91,295 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addblanco.scale-100.png">
       <PackagePath>addblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnegro.scale-100.png">
       <PackagePath>addnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarblanco.scale-100.png">
       <PackagePath>borrarblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\borrarnegro.scale-100.png">
       <PackagePath>borrarnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosblanco.scale-100.png">
       <PackagePath>dispositivosblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dispositivosnegro.scale-100.png">
       <PackagePath>dispositivosnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.954</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editarnegro.scale-100.png">
       <PackagePath>editarnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flyoutblanco.scale-100.png">
       <PackagePath>flyoutblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flyoutnegro.scale-100.png">
       <PackagePath>flyoutnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconoadminblanco.scale-100.png">
       <PackagePath>iconoadminblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconoadminnegro.scale-100.png">
       <PackagePath>iconoadminnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconocultar.scale-100.png">
       <PackagePath>iconocultar.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirblanco.scale-100.png">
       <PackagePath>iconosalirblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconosalirnegro.scale-100.png">
       <PackagePath>iconosalirnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconver.scale-100.png">
       <PackagePath>iconver.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\incidenciasblanco.scale-100.png">
       <PackagePath>incidenciasblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\incidenciasnegro.scale-100.png">
       <PackagePath>incidenciasnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infoblanco.scale-100.png">
       <PackagePath>infoblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\infonegro.scale-100.png">
       <PackagePath>infonegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
       <PackagePath>logo.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoApp.ico">
       <PackagePath>logoApp.ico</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-100.png">
       <PackagePath>logoAppLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.941</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-125.png">
       <PackagePath>logoAppLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.941</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-150.png">
       <PackagePath>logoAppLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.941</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-200.png">
       <PackagePath>logoAppLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.941</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLargeTile.scale-400.png">
       <PackagePath>logoAppLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.941</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>logoAppLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>logoAppLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>logoAppLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>logoAppLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>logoAppLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-unplated_targetsize-16.png">
       <PackagePath>logoAppLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-unplated_targetsize-24.png">
       <PackagePath>logoAppLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-unplated_targetsize-256.png">
       <PackagePath>logoAppLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-unplated_targetsize-32.png">
       <PackagePath>logoAppLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.altform-unplated_targetsize-48.png">
       <PackagePath>logoAppLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.scale-100.png">
       <PackagePath>logoAppLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.scale-125.png">
       <PackagePath>logoAppLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.948</Modified>
+      <Modified>2024-06-14T17:01:28.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.scale-150.png">
       <PackagePath>logoAppLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.948</Modified>
+      <Modified>2024-06-14T17:01:28.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.scale-200.png">
       <PackagePath>logoAppLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.948</Modified>
+      <Modified>2024-06-14T17:01:28.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.scale-400.png">
       <PackagePath>logoAppLogo.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.948</Modified>
+      <Modified>2024-06-14T17:01:28.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.targetsize-16.png">
       <PackagePath>logoAppLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.948</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.targetsize-24.png">
       <PackagePath>logoAppLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.targetsize-256.png">
       <PackagePath>logoAppLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.targetsize-32.png">
       <PackagePath>logoAppLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppLogo.targetsize-48.png">
       <PackagePath>logoAppLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.947</Modified>
+      <Modified>2024-06-14T17:01:28.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppMediumTile.scale-100.png">
       <PackagePath>logoAppMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppMediumTile.scale-125.png">
       <PackagePath>logoAppMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppMediumTile.scale-150.png">
       <PackagePath>logoAppMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppMediumTile.scale-200.png">
       <PackagePath>logoAppMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppMediumTile.scale-400.png">
       <PackagePath>logoAppMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppSmallTile.scale-100.png">
       <PackagePath>logoAppSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.945</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppSmallTile.scale-125.png">
       <PackagePath>logoAppSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.945</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppSmallTile.scale-150.png">
       <PackagePath>logoAppSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppSmallTile.scale-200.png">
       <PackagePath>logoAppSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppSmallTile.scale-400.png">
       <PackagePath>logoAppSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.943</Modified>
+      <Modified>2024-06-14T17:01:28.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppStoreLogo.scale-100.png">
       <PackagePath>logoAppStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppStoreLogo.scale-125.png">
       <PackagePath>logoAppStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.946</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppStoreLogo.scale-150.png">
       <PackagePath>logoAppStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.945</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppStoreLogo.scale-200.png">
       <PackagePath>logoAppStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.945</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppStoreLogo.scale-400.png">
       <PackagePath>logoAppStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.945</Modified>
+      <Modified>2024-06-14T17:01:28.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppWideTile.scale-100.png">
       <PackagePath>logoAppWideTile.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.942</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppWideTile.scale-125.png">
       <PackagePath>logoAppWideTile.scale-125.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.942</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppWideTile.scale-150.png">
       <PackagePath>logoAppWideTile.scale-150.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.942</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppWideTile.scale-200.png">
       <PackagePath>logoAppWideTile.scale-200.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.942</Modified>
+      <Modified>2024-06-14T17:01:28.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoAppWideTile.scale-400.png">
       <PackagePath>logoAppWideTile.scale-400.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.942</Modified>
+      <Modified>2024-06-14T17:01:28.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojoabierto.scale-100.png">
       <PackagePath>ojoabierto.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.950</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ojocerrado.scale-100.png">
       <PackagePath>ojocerrado.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.952</Modified>
+      <Modified>2024-06-14T17:01:28.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsblanco.scale-100.png">
       <PackagePath>settingsblanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsnegro.scale-100.png">
       <PackagePath>settingsnegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.951</Modified>
+      <Modified>2024-06-14T17:01:28.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablablanco.scale-100.png">
       <PackagePath>tablablanco.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablanegro.scale-100.png">
       <PackagePath>tablanegro.scale-100.png</PackagePath>
-      <Modified>2024-06-12T09:21:51.953</Modified>
+      <Modified>2024-06-14T17:01:28.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\Desktop\2DAM\Desarrollo de interfaces\GitHubDI\DI\TFG\ProyectoTFG\ProyectoTFG\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Incidenciapp.deps.json">
       <PackagePath>Incidenciapp.deps.json</PackagePath>
-      <Modified>2024-06-13T19:00:15.228</Modified>
+      <Modified>2024-06-14T17:01:50.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

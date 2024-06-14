@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Administacion"
+             Title="Administacion"
+             BackgroundColor="{DynamicResource colorTemaOriginal}"
+             Loaded="ContentPage_Loaded">
+
+
+    <ScrollView>
+
+        <Grid RowDefinitions="auto,auto,auto" ColumnDefinitions="auto" 
+          HorizontalOptions="Center" VerticalOptions="Center"
+          Margin="25,25,25,25"
+          RowSpacing="10" ColumnSpacing="15">
+
+            <Label Text="Crear Usuario"
+               FontFamily="{DynamicResource fuente}"
+               HorizontalOptions="Center"
+               Grid.Row="0" Grid.Column="0"/>
+
+
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   MaximumWidthRequest="350"
+                   BorderColor="{DynamicResource colorFuenteEtiqueta}"
+                   BackgroundColor="Transparent"
+                   CornerRadius="25">
+
+                <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+                    <Label x:Name="lblEmail"
+                       FontFamily="{DynamicResource fuente}"
+                       MinimumWidthRequest="300"
+                       Margin="0,0,0,5"
+                       Text="Email"
+                       />
+
+                    <Entry x:Name="emailEntry"
+                       FontFamily="{DynamicResource fuente}"
+                       Margin="0,0,0,5"
+                       MaximumWidthRequest="300"/>
+
+                    <Label x:Name="lblPassword"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       Text="Contraseña"/>
+
+                    <Entry x:Name="passwordEntry"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       MaximumWidthRequest="300"/>
+
+                    <Label x:Name="lblRol"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       Text="Rol"/>
+
+                    <Picker x:Name="rolPicker"
+                        Margin="0,0,0,5"
+                        FontFamily="{DynamicResource fuente}"
+                        ToolTipProperties.Text="Selecciona un rol del desplegable"
+                        MaximumWidthRequest="300">
+
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Admin</x:String>
+                                <x:String>Docente</x:String>
+                                <x:String>Técnico</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+
+                    <Button x:Name="btnGuardar"
+                        Margin="0,0,0,5"
+                        FontFamily="{DynamicResource fuente}"
+                        MaximumWidthRequest="300"
+                        Text="Guardar"
+                        Clicked="btnGuardar_Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Label Text="Lista Usuarios"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Row="1" Grid.Column="0"
+                   HorizontalOptions="Center"/>
+
+            <Frame Grid.Row="1" Grid.Column="0"
+                   MaximumWidthRequest="350"
+                   BorderColor="{DynamicResource colorFuenteEtiqueta}"
+                   BackgroundColor="Transparent"
+                   CornerRadius="25">
+
+                <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="0,0,0,10">
+
+                    <Entry x:Name="entryBuscar"
+                       Margin="0,0,0,5"
+                       Placeholder="Filtrar email..."
+                       Grid.Row="1" Grid.Column="1"
+                       MaximumWidthRequest="300"
+                       FontFamily="{DynamicResource fuente}"
+                       TextChanged="entryBuscar_TextChanged"/>
+
+                    <Frame ToolTipProperties.Text="Selecciona un ususario para poder borrarlo o consultar sus datos"
+                       SemanticProperties.Description="Lista de usuarios. Selecciona un ususario para poder borrarlo o consultar sus datos"
+                       HorizontalOptions="CenterAndExpand"
+                       MinimumWidthRequest="300"
+                       MaximumWidthRequest="300"
+                       HeightRequest="150"
+                       Margin="0,0,0,5"
+                       BackgroundColor="{DynamicResource colorEntrys}"
+                       x:Name="frameLista">
+
+                        <ListView x:Name="listViewUsuarios"
+                              SeparatorColor="Black"
+                              HorizontalOptions="CenterAndExpand"
+                              VerticalOptions="Start"
+                              Margin="5,0,5,0"
+                              ItemTapped="listViewUsuarios_ItemTapped">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <Grid ColumnDefinitions="*,*">
+
+                                            <Label Text="{Binding Email}"
+                                               FontFamily="{DynamicResource fuente}"
+                                               Grid.Column="0"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Center"
+                                               Margin="10,0,0,0"
+                                               TextColor="{DynamicResource colorFuenteEtiqueta}"
+                                               />
+                                            <!-- Ajusta el texto largo -->
+
+                                            <Label Text= "{Binding Rol}"
+                                               FontFamily="{DynamicResource fuente}"
+                                               Grid.Column="1"
+                                               HorizontalOptions="End"
+                                               VerticalOptions="Center"
+                                               Padding="0,0,10,0"
+                                               TextColor="{DynamicResource colorFuenteEtiqueta}"
+                                               />
+                                            <!-- Ajusta el texto largo -->
+
+                                        </Grid>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </Frame>
+
+                    <Button x:Name="btnBorrar"
+                        Margin="0,0,0,5"
+                        FontFamily="{DynamicResource fuente}"
+                        MaximumWidthRequest="300"
+                        Text="Borrar"
+                        Clicked="btnBorrar_Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Label Grid.Row="2" Grid.Column="0"
+               FontFamily="{DynamicResource fuente}"
+               HorizontalOptions="Center"
+               Text="Editar Usuario"/>
+
+            <Frame Grid.Row="2" Grid.Column="0"
+               MaximumWidthRequest="350"
+               BorderColor="{DynamicResource colorFuenteEtiqueta}"
+               BackgroundColor="Transparent"
+               CornerRadius="25">
+
+                <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+                    <Label x:Name="lblEmailSeleccionado"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       MinimumWidthRequest="300"
+                       Text="Email"/>
+
+                    <Entry x:Name="entryEmailEdit"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       MaximumWidthRequest="300"
+                       IsEnabled="False"/>
+
+                    <Label x:Name="lblPassSeleccionada"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       Text="Contraseña hasheada"/>
+
+                    <Entry x:Name="entryPassEdit"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       MaximumWidthRequest="300"
+                       IsEnabled="False"
+                       VerticalOptions="Center"/>
+
+                    <Label x:Name="nuevaPass"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       Text="Nueva Contraseña"/>
+
+                    <Entry x:Name="entryNuevaPass"
+                       Margin="0,0,0,5"
+                       FontFamily="{DynamicResource fuente}"
+                       ToolTipProperties.Text="Introduce una nueva contraseña para cambiar la anterior"
+                       MaximumWidthRequest="300"
+                       VerticalOptions="Center"/>
+
+                    <Button x:Name="btnGuardarCambios"
+                        Margin="0,0,0,5"
+                        FontFamily="{DynamicResource fuente}"
+                        MaximumWidthRequest="300"
+                        Text="Guardar Cambios"
+                        Clicked="btnGuardarCambios_Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,13 +1,14 @@
 using Microsoft.Maui.Controls;
 using ProyectoTFG.Modelos;
 using System.Collections.ObjectModel;
+using System.Reflection;
 
 namespace ProyectoTFG.Vistas;
 
 public partial class ListaIncidencias : ContentPage
 {
 
-    private List<Incidencia> incidencias;
+    private List<Incidencia> incidencias = new List<Incidencia>();
     private List<Incidencia> incidenciasDesc;
     private List<Incidencia> incidenciasAux = new List<Incidencia>();
     private Grid filaSeleccionada;
@@ -19,10 +20,13 @@ public partial class ListaIncidencias : ContentPage
     private bool pulsadoPrio = true;
     private bool pulsadoUrgen = true;
     private bool pulsadoEstado = true;
-    private bool mensajeMostrado = false;
 
-    public int FilasAntes { get; set; }
-    public int FilasActuales { get; set; }
+    private bool MensajeMostrado = false;
+
+    private List<string> IdsAntes = new List<string>();
+    private List<string> IdsActuales = new List<string>();
+
+    private List<string> NuevosIds;
 
     public string Idincidencia { get; set; }
 
@@ -30,72 +34,107 @@ public partial class ListaIncidencias : ContentPage
 	{
 		InitializeComponent();
 
-        CargarIncidenciasDesdeBDD();
+        App.PaginaActual = this;
+    }
 
+    private async void ContentPage_Loaded(object sender, EventArgs e)
+    {
         hilo = new Thread(async () =>
         {
             while (true)
             {
-                if(FilasActuales != FilasAntes)
+                if(App.PaginaActual is ListaIncidencias)
                 {
-                    incidencias = await App.bdd.ObtenerListaIncidencias();
+                    // Obtener la lista de incidencias actualizada
+                    incidenciasAux = await App.bdd.ObtenerListaIncidencias();
+                    incidenciasAux = await App.bdd.OrdenarFechaDesc(incidencias);
+                    // Actualizar ids actuales
+                    IdsActuales = incidenciasAux.Select(x => x.Id).ToList();
+                    await App.bdd.ActualizarIdsIncidenciasActuales(UserLogueado.UserLog, IdsActuales);
 
-                    incidencias = await App.bdd.OrdenarFechaDesc(incidencias);
+                    // Obtener ids antes
+                    IdsAntes = await App.bdd.ObtenerIdsIncidenciasAntes(UserLogueado.UserLog);
 
-                    FilasActuales = incidencias.Count;
+                    // Actualizar ids actuales
+                    NuevosIds = incidenciasAux.Select(x => x.Id).ToList();
 
-                    await App.bdd.ActualizarFilasActuales(UserLogueado.UserLog, FilasActuales);
-
-                    int? filasAnt = await App.bdd.ObtenerFilasAntes(UserLogueado.UserLog);
-
-                    int? filasAct = await App.bdd.ObtenerFilasActuales(UserLogueado.UserLog);
-
-                    int? total = filasAct - filasAnt;
-
-                    if (total > 0 && !mensajeMostrado)
+                    // Comparar idsAntes con nuevosIdsActuales
+                    if (SonIguales(IdsAntes, NuevosIds) == false)
                     {
-                        mensajeMostrado = true;
-                        Device.BeginInvokeOnMainThread(async () =>
+                        // Lista auxiliar para nuevos IDs
+                        NuevosIds = NuevosIds.Except(IdsAntes).ToList();
+
+                        if (NuevosIds.Count > 0 && MensajeMostrado == false)
                         {
-                            DisplayAlert("", $"Tienes {total} incidencias nuevas", "ok");
-                        });
+                            MensajeMostrado = true;
+                            Device.BeginInvokeOnMainThread(async () =>
+                            {
+                                if (NuevosIds.Count == 1)
+                                {
+                                    await DisplayAlert("", $"Tienes {NuevosIds.Count} incidencia nueva", "ok");
+                                    await TextToSpeech.SpeakAsync($"{NuevosIds.Count} nueva incidencia");
+                                }
+                                else
+                                {
+                                    await DisplayAlert("", $"Tienes {NuevosIds.Count} incidencias nuevas", "ok");
+                                    await TextToSpeech.SpeakAsync($"{NuevosIds.Count} nuevas incidencias");
+                                }
+                            });
+
+                            // Actualizar la lista de incidencias mostrada en la UI
+                            Dispatcher.Dispatch(() =>
+                            {
+                                collectionView.ItemsSource = incidenciasAux;
+                            });
+                        }
                     }
 
-                    Dispatcher.Dispatch(() =>
-                    {
-                        collectionView.ItemsSource = incidencias;
-                    });
-                    
                 }
                 await Task.Delay(500);
             }
         });
+
         hilo.Start();
     }
-    
-    private async void ContentPage_Loaded(object sender, EventArgs e)
+    // Función para comparar dos listas de strings y determinar si son iguales
+    bool SonIguales(List<string> lista1, List<string> lista2)
     {
-        CargarIncidenciasDesdeBDD();
+        return new HashSet<string>(lista1).SetEquals(lista2);
     }
-
-    public async void CargarIncidenciasDesdeBDD()
+    protected override async void OnAppearing()
     {
+        base.OnAppearing();
+        App.PaginaActual = this;
+
         // Aquí cargamos las incidencias desde la base de datos
         incidencias = await ObtenerIncidenciasDesdeBDD();
 
         incidencias = await App.bdd.OrdenarFechaDesc(incidencias);
 
-        FilasAntes = incidencias.Count;
+        IdsActuales = incidencias.Select(x => x.Id).ToList();
 
         collectionView.ItemsSource = incidencias;
+
+        MensajeMostrado = false;
     }
     protected override async void OnDisappearing()
     {
         base.OnDisappearing();
+        App.PaginaActual = null;
 
-        await App.bdd.ActualizarFilasAntes(UserLogueado.UserLog, FilasActuales);
+        MensajeMostrado = false;
 
-        mensajeMostrado = false;
+        await App.bdd.ActualizarIdsIncidenciasAntes(UserLogueado.UserLog, IdsActuales);
+
+    }
+
+    public async Task OnAppClosing()
+    {
+
+        MensajeMostrado = false;
+
+        await App.bdd.ActualizarIdsIncidenciasAntes(UserLogueado.UserLog, IdsActuales);
+
     }
 
     private async Task<List<Incidencia>> ObtenerIncidenciasDesdeBDD()
@@ -195,6 +234,8 @@ public partial class ListaIncidencias : ContentPage
 
     private async void btnInfo_Clicked(object sender, EventArgs e)
     {
+        //MensajeMostrado = true;
+
         Navigation.PushModalAsync(new DetallesIncidencia(this));
     }
 
@@ -222,7 +263,17 @@ public partial class ListaIncidencias : ContentPage
 
         incidencias.Clear();
 
-        CargarIncidenciasDesdeBDD();
+        incidencias = await App.bdd.ObtenerListaIncidencias();
+
+        incidencias = await App.bdd.OrdenarFechaDesc(incidencias);
+
+        collectionView.ItemsSource = incidencias;
+
+        IdsActuales = incidencias.Select(x => x.Id).ToList();
+
+        await App.bdd.ActualizarIdsIncidenciasActuales(UserLogueado.UserLog, IdsActuales);
+
+        await App.bdd.ActualizarIdsIncidenciasAntes(UserLogueado.UserLog, IdsActuales);
     }
 
     private async void Picker_SelectedIndexChanged(object sender, EventArgs e)

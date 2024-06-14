@@ -43,6 +43,8 @@ public partial class Administacion : ContentPage
                     ContadorNuevasInci = 0,
                     FilasAntes = 0,
                     FilasActuales = 0,
+                    IdsActuales = new List<string>(),
+                    IdsAntes = new List<string>(),
                     ImagenPerfil = imagenPorDefecto
                 };
 

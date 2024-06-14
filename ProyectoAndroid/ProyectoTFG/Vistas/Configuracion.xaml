@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Configuracion"
+             Title="Configuracion"
+             BackgroundColor="{DynamicResource colorTemaOriginal}">
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*, *, *, *, *, * " 
+              ColumnDefinitions="*, *" 
+              HorizontalOptions="Center" 
+              VerticalOptions="Center" 
+              Margin="25,25,25,25"
+              RowSpacing="25">
+
+            <!-- Título para los RadioButtons -->
+            <Label Text="Selecciona un tema"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center" />
+
+            <!-- StackLayout para organizar los RadioButtons horizontalmente -->
+            <StackLayout Orientation="Vertical"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     HorizontalOptions="Center">
+
+                <RadioButton x:Name="temaOriginalRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Original"
+                             GroupName="Temas"
+                             Value="Tema Original"
+                             HorizontalOptions="StartAndExpand"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}" 
+                             FontFamily="{DynamicResource fuente}"/>
+
+                <RadioButton x:Name="temaClaroRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Claro"
+                             GroupName="Temas"
+                             Value="Tema Claro"
+                             HorizontalOptions="StartAndExpand"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}"
+                             FontFamily="{DynamicResource fuente}"/>
+
+                <RadioButton x:Name="temaAltoContrasteRadioButton"
+                             BackgroundColor="Transparent"
+                             Content="Tema Alto Contraste"
+                             GroupName="Temas"
+                             Value="Tema Alto Contraste"
+                             HorizontalOptions="StartAndExpand"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             FontSize="{DynamicResource tamLetra}"
+                             TextColor="{DynamicResource colorFuenteEtiqueta}" 
+                             FontFamily="{DynamicResource fuente}"/>
+                
+            </StackLayout>
+
+            <Label x:Name="lblFontSize"
+                   FontFamily="{DynamicResource fuente}"
+                   Text="Tamaño de la fuente"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center" />
+
+            <Slider x:Name="sliderFontSize"
+                    BackgroundColor="Transparent"
+                    Maximum="18"
+                    Minimum="10"
+                    Value="14"
+                    WidthRequest="300"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ValueChanged="sliderFontSize_ValueChanged" />
+
+            <!-- Botón para guardar la configuración -->
+            <Button x:Name="btnGuardarConfi"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="Guardar"
+                    HorizontalOptions="Center" 
+                    Clicked="btnGuardarConfi_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

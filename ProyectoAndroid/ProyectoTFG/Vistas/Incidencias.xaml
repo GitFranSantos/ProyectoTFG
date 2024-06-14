@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTFG.Vistas.Incidencias"
+             Title="Incidencias"
+             BackgroundColor="{DynamicResource colorTemaOriginal}"
+             >
+
+    <ScrollView>
+
+        <Grid RowDefinitions="*,auto,*,*,*,*,*,*" ColumnDefinitions="*,*" 
+              HorizontalOptions="Center" VerticalOptions="Center"
+              RowSpacing="10" ColumnSpacing="10" Margin="25,25,25,25">
+
+            <Label Text="Selecciona un dispositivo"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Row="0" Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"/>
+
+            <Frame Grid.Row="1" Grid.ColumnSpan="2"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Start"
+                   MaximumHeightRequest="200"
+                   CornerRadius="25"
+                   BackgroundColor="{DynamicResource colorEntrys}"
+                   x:Name="frameLista">
+
+                <ListView x:Name="listViewDispositivos"
+                          SeparatorColor="Black"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="Start"
+                          >
+                    
+                    <ListView.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <ViewCell>
+
+                                <Grid ColumnDefinitions="*,*,*,*"
+                                      ColumnSpacing="10">
+
+                                    <Label Text="{Binding Tipo}"
+                                           Grid.Column="0"
+                                           HorizontalOptions="Start"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"/>
+
+                                    <Label Text="{Binding Fabricante}"
+                                           Grid.Column="1"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"/>
+
+                                    <Label Text="{Binding Modelo}"
+                                           Grid.Column="2"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"/>
+
+                                    <Label Text= "{Binding Ubicacion}"
+                                           Grid.Column="3"
+                                           HorizontalOptions="End"
+                                           VerticalOptions="Center"
+                                           FontFamily="{DynamicResource fuente}"
+                                           Padding="5"/>
+                                    
+                                </Grid>
+
+                            </ViewCell>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </Frame>
+
+            <Label x:Name="lblUrgencia"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="Center"
+                   Text="Urgencia"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="urgenciaPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="2" Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baja</x:String>
+                        <x:String>Media</x:String>
+                        <x:String>Alta</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <Label x:Name="lblImpacto"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="Center"
+                   Text="Imagen"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+
+            <Frame x:Name="frameImg"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   BackgroundColor="Black"
+                   BorderColor="{DynamicResource colorFuenteEtiqueta}"
+                   Padding="0">
+
+                <VerticalStackLayout>
+
+                    <Image x:Name="imagenInci"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           HorizontalOptions="Center"
+                           Aspect="Fill"/>
+
+                    <Button x:Name="btnBuscar"
+                            FontFamily="{DynamicResource fuente}"
+                            ToolTipProperties.Text="Pulsa para seleccionar una imagen de tu dispositivo"
+                            Text="Agregar Imagen"
+                            Grid.Row="1" Grid.ColumnSpan="3"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="btnBuscar_Clicked"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Label x:Name="lblPrioridad"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="Center"
+                   Text="Prioridad"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="prioridadPicker"
+                    FontFamily="{DynamicResource fuente}"
+                    Grid.Row="3"
+                    Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baja</x:String>
+                        <x:String>Media</x:String>
+                        <x:String>Alta</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <Label x:Name="lblTitulo"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="Center"
+                   Text="Título"
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+
+            <Entry Grid.Row="5"
+                   FontFamily="{DynamicResource fuente}"
+                   Grid.Column="1"
+                   x:Name="tituloEntry"/>
+
+            <Label x:Name="lblDescripcion"
+                   FontFamily="{DynamicResource fuente}"
+                   HorizontalOptions="Center"
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   Text="Descripción"/>
+
+            <Editor x:Name="descripcionEditor"
+                    FontSize="{DynamicResource tamLetra}"
+                    BackgroundColor="{DynamicResource colorEntrys}"
+                    TextColor="{DynamicResource colorFuenteEtiqueta}"
+                    Placeholder="Escribe aquí..."
+                    PlaceholderColor="{DynamicResource colorPlaceholder}"
+                    HeightRequest="100"
+                    Grid.Row="6"
+                    Grid.Column="1"/>
+
+            <Button x:Name="btnAgregarIncidencia"
+                    FontFamily="{DynamicResource fuente}"
+                    Text="Añadir Incidencia"
+                    Grid.Row="7"
+                    Grid.ColumnSpan="2"
+                    Clicked="btnAgregarIncidencia_Clicked"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

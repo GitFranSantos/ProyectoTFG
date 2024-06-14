@@ -40,5 +40,10 @@ namespace ProyectoTFG.Modelos
         [BsonElement("filasActuales")]
         public int FilasActuales { get; set; }
 
+        [BsonElement("idsActuales")]
+        public List<string> IdsActuales { get; set; }
+
+        [BsonElement("idsAntes")]
+        public List<string> IdsAntes { get; set; }
     }
 }
